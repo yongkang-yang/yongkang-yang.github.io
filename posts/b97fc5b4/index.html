@@ -28,7 +28,7 @@
 <meta property="og:description" content="Info Click this link to access the file OSF link  Reference: Li, W.-D., Wang, J., Allen, T., Zhang, X., Yu, K., Zhang, H., Huang, J. L., Liu, M., &amp; Li, A. (2024). Getting under the skin? Infl">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-06-14T14:44:41.000Z">
-<meta property="article:modified_time" content="2024-06-18T12:38:51.923Z">
+<meta property="article:modified_time" content="2024-06-19T23:25:17.049Z">
 <meta property="article:author" content="Yongkang Yang">
 <meta property="article:tag" content="measurement invariance">
 <meta property="article:tag" content="latent change score model">
@@ -211,7 +211,7 @@ Latent change score model
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-06-18 14:38:51" itemprop="dateModified" datetime="2024-06-18T14:38:51+02:00">2024-06-18</time>
+      <time title="Modified: 2024-06-20 01:25:17" itemprop="dateModified" datetime="2024-06-20T01:25:17+02:00">2024-06-20</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -251,6 +251,9 @@ research: <span class="exturl" data-url="aHR0cHM6Ly93d3cud2VuZG9uZ2xpLmNvbS9pbmR
 <p><b>A Replication of <span class="exturl" data-url="aHR0cHM6Ly9kb2kub3JnLzEwLjExNzcvMTA5NDQyODEyMDk2Mzc4OA==">Matusik et al
 (2021)<i class="fa fa-external-link-alt"></i></span></b></p>
 <p>The results and Mplus code can be found in this repo:</p>
+<p><b>Mplus Code of  <span class="exturl" data-url="aHR0cHM6Ly9wc3ljbmV0LmFwYS5vcmcvZG9pLzEwLjEwMzcvYXBsMDAwMTA0Mg==">Steffen et al
+(2021)<i class="fa fa-external-link-alt"></i></span></b></p>
+<figure class="highlight plaintext"><figcaption><span>syntax</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">Mplus syntax for hypothesis 1 sensitivity analysis</span><br><span class="line"></span><br><span class="line">TITLE:	</span><br><span class="line">    Merger paper H1</span><br><span class="line"></span><br><span class="line">DATA: </span><br><span class="line">    FILE IS &#x27;g:/my drive/merger/latent.dat&#x27;;</span><br><span class="line"></span><br><span class="line">VARIABLE:	</span><br><span class="line">    NAMES ARE merge size js5 js7 abs5 abs7 ss5 ss7;</span><br><span class="line">    USEVARIABLES ARE merge size js5 js7;</span><br><span class="line">    </span><br><span class="line">MODEL: </span><br><span class="line">    !Latent True Scores</span><br><span class="line">    js1 BY js5@1;</span><br><span class="line">    js2 BY js7@1;</span><br><span class="line"></span><br><span class="line">    !Specifies the mean and variance of js1.</span><br><span class="line">    [js1]; js1;</span><br><span class="line">    !Fixes the mean and variance of js2 to 0.</span><br><span class="line">    [js2@0]; js2@0;</span><br><span class="line">    [js5-js7@0];</span><br><span class="line">    !Sets the residual variances of js5 and js7 to be equal and labels them as resvar.</span><br><span class="line">    js5-js7 (resvar);</span><br><span class="line"></span><br><span class="line">    !Autoregressions</span><br><span class="line">    js2 ON js1@1;</span><br><span class="line"></span><br><span class="line">    !Latent Change Factors</span><br><span class="line">    jsd BY js2@1;</span><br><span class="line">    !Fixes the mean and variance of jsd to 0.</span><br><span class="line">    [jsd@0];</span><br><span class="line">    jsd@0;</span><br><span class="line"></span><br><span class="line">    !Hypothesis</span><br><span class="line">    jsd ON merge size;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">OUTPUT:</span><br><span class="line">    STAND CINT;</span><br></pre></td></tr></table></figure>
 
     </div>
 
