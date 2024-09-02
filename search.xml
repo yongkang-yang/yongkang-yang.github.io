@@ -209,7 +209,7 @@ author name" + "example item".</p>
     <content><![CDATA[<p>Some useful prompts for academic writing from a recent article in
 Nature Career Column.</p>
 <div class="text-center">
-<a class="btn" href="https://www.nature.com/articles/d41586-024-01042-3" title="nature"><i class="fa-regular fa-n"></i>Nature</a>
+<span class="exturl" data-url="aHR0cHM6Ly93d3cubmF0dXJlLmNvbS9hcnRpY2xlcy9kNDE1ODYtMDI0LTAxMDQyLTM=">Nature<i class="fa fa-external-link-alt"></i></span>
 </div>
 <blockquote>
 <p>The value that I derive from generative AI is not from the technology
