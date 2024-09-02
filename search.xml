@@ -237,4 +237,191 @@ author name" + "example item".</p>
         <tag>measures</tag>
       </tags>
   </entry>
+  <entry>
+    <title>How to test moderation in growth modeling</title>
+    <url>/posts/c622061/</url>
+    <content><![CDATA[<p>The outcome is repeatedly measured in the moderation.</p>
+<p>There are two papers explaining the methods behind:</p>
+<ol type="1">
+<li><p>Curran, P. J., Bauer, D. J., &amp; Willoughby, M. T. (2004).
+Testing main effects and interactions in latent curve analysis.
+Psychological Methods, 9(2), 220-237.</p></li>
+<li><p>Preacher, K. J., Curran, P. J., &amp; Bauer, D. J. (2006).
+Computational tools for probing interactions in multiple linear
+regression, multilevel modeling, and latent curve analysis. Journal of
+Educational and Behavioral Statistics, 31(4), 437-448.</p>
+<blockquote>
+<p>Note: online tools mentioned in this paper could be found at: <span class="exturl" data-url="aHR0cHM6Ly9ldXIwMy5zYWZlbGlua3MucHJvdGVjdGlvbi5vdXRsb29rLmNvbS8/dXJsPWh0dHAlM0ElMkYlMkZ3d3cucXVhbnRwc3kub3JnJTJGaW50ZXJhY3QlMkZpbmRleC5odG0mZGF0YT0wNSU3QzAyJTdDeS55YW5nQHJzbS5ubCU3QzZhNzRiMjE5MWNlYzRkYjY4NDBmMDhkY2JmY2I4MzljJTdDNzE1OTAyZDZmNjNlNGI4ZDkyOWI0YmIxNzBiYWQ0OTIlN0MwJTdDMCU3QzYzODU5NjEyODAzNjY4MDkwNiU3Q1Vua25vd24lN0NUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjAlM0QlN0MwJTdDJTdDJTdDJnNkYXRhPTVtM2RIRVJuSkEzMlh1JTJCSnREaDclMkJyR28wME9GS0loMEpBR3pENHNxdmhJJTNEJnJlc2VydmVkPTA=">http://www.quantpsy.org/interact/index.htm<i class="fa fa-external-link-alt"></i></span></p>
+</blockquote></li>
+</ol>
+<p>Though moderation was not a main focus in this classic paper, gender
+as a moderator appeared in the growth modeling.</p>
+<ol type="1">
+<li>Ployhart, R. E., &amp; Vandenberg, R. J. (2010). Longitudinal
+research: The theory, design, and analysis of change. <em>Journal of
+management</em>, <em>36</em>(1), 94-120.</li>
+</ol>
+<p><strong>Two example articles deployed moderation in latent growth
+modeling:</strong></p>
+<p><strong>AMJ:</strong> more details in Online Supplemental
+Materials:</p>
+<ul>
+<li>Deng, Y., Lin, W., Song, Y., Wang, M., Cai, D., &amp; Liu, J. (In
+press). Socialization as a political arena: A multi-agent interactionist
+perspective to understand political skill and newcomer socialization
+rates. <em>Academy of Management Journal</em>.</li>
+</ul>
+<p><strong>JAP</strong>: Multilevel moderation</p>
+<ul>
+<li>Miron-Spektor, E., Vashdi, D. R., &amp; Gopher, H. (2022). Bright
+sparks and enquiring minds: Differential effects of goal orientation on
+the creativity trajectory. <em>Journal of Applied Psychology</em>,
+<em>107</em>(2), 310-218.</li>
+</ul>
+<hr />
+<h2 id="some-html-usage">Some HTML usage:</h2>
+<h1>
+<span style="color:#040273;">Heading 1</span>
+</h1>
+<h2>
+<span style="color:#040273;">Heading 2</span>
+</h2>
+<h3>
+<span style="color:#040273;">Heading 3</span>
+</h3>
+<p><span
+style="color:white;background:black;font-size:50px;font-family:lato;">Example
+text</span></p>
+<p><b>Bold text</b></p>
+<p><b><span style="color:rgb(255, 0, 255);">Bold Purple
+text</span></b></p>
+<h2 id="some-markdown-next-usage">Some Markdown-Next usage:</h2>
+<p>Link: <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9taXN0L2RvY3MvdGhpcmQtcGFydHktc2VydmljZXMvbWF0aC1lcXVhdGlvbnMjbWp4LWVxbiUzQWVxMQ==">Hexo-next-plugins<i class="fa fa-external-link-alt"></i></span></p>
+<ul>
+<li><p>purple note <div class="note primary"><h4 id="primary-header">Primary Header</h4>
+<p><strong>Welcome</strong> to <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo!<i class="fa fa-external-link-alt"></i></span></p>
+</div></p></li>
+<li><p>blue note <div class="note info"><h4 id="info-header">Info Header</h4>
+<p><strong>Welcome</strong> to <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo!<i class="fa fa-external-link-alt"></i></span></p>
+</div></p></li>
+<li><p>green note <div class="note success"><h4 id="success-header">Success Header</h4>
+<p><strong>Welcome</strong> to <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo!<i class="fa fa-external-link-alt"></i></span></p>
+</div></p></li>
+<li><p>yellow note <div class="note warning"><h4 id="warning-header">Warning Header</h4>
+<p><strong>Welcome</strong> to <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo!<i class="fa fa-external-link-alt"></i></span></p>
+</div></p></li>
+<li><p>red note <div class="note danger"><h4 id="danger-header">Danger Header</h4>
+<p><strong>Welcome</strong> to <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo!<i class="fa fa-external-link-alt"></i></span></p>
+</div></p></li>
+<li><p>Link grid</p></li>
+</ul>
+<div class="link-grid"><div class="link-grid-container">
+<object class="link-grid-image" data="/images/Google_Scholar.png"></object>
+<p>Google Scholar</p><p>follow my research</p>
+<a href="https://scholar.google.com/citations?hl=en&user=g5nED5gAAAAJ"></a>
+</div><div class="link-grid-container">
+<object class="link-grid-image" data="/images/RG.png"></object>
+<p>ResearchGate</p><p>follow my research</p>
+<a href="https://www.researchgate.net/profile/Yongkang-Yang-6"></a>
+</div><div class="link-grid-container">
+<object class="link-grid-image" data="/images/linkedin.png"></object>
+<p>LinkedIn</p><p>connect</p>
+<a href="https://www.linkedin.com/in/yongkang-yang-0530a1205/"></a>
+</div><div class="link-grid-container">
+<object class="link-grid-image" data="/images/orcid.png"></object>
+<p>ORCID</p><p>connecting research and researchers</p>
+<a href="https://orcid.org/0000-0001-6134-1296"></a>
+</div><div class="link-grid-container">
+<object class="link-grid-image" data="/images/rsm.png"></object>
+<p>Homepage</p><p>RSM PhD Candidate</p>
+<a href="https://www.rsm.nl/people/yongkang-yang/"></a>
+</div><div class="link-grid-container">
+<object class="link-grid-image" data="/images/github.png"></object>
+<p>Github</p><p>projects</p>
+<a href="https://github.com/yongkang-yang"></a>
+</div></div>
+<ul>
+<li>Two tabs</li>
+</ul>
+<div class="tabs" id="address"><ul class="nav-tabs"><li class="tab active"><a href="#address-1">Address 1</a></li><li class="tab"><a href="#address-2">Address 2</a></li></ul><div class="tab-content"><div class="tab-pane active" id="address-1"><p><strong>Visiting address</strong> Office: T04-01 Burgemeester Oudlaan
+50 3062 PA Rotterdam Netherlands</p></div><div class="tab-pane" id="address-2"><p><strong>Postal address</strong> Postbus 1738 3000 DR Rotterdam
+Netherlands</p></div></div></div>
+<ul>
+<li>button with absolute URL</li>
+</ul>
+<div class="text-center">
+<a class="btn" href="https://github.com" title="GitHub"><i class="fab fa-github fa-fw fa-lg"></i>GitHub</a>
+</div>
+<ul>
+<li>Group Picture</li>
+</ul>
+<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="/images/favicon-16x16-next.png" /></div><div class="group-picture-column"><img
+src="/images/favicon-16x16-next.png" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img
+src="/images/favicon-16x16-next.png" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img
+src="/images/favicon-16x16-next.png" /></div><div class="group-picture-column"><img
+src="/images/favicon-16x16-next.png" /></div></div></div>
+<ul>
+<li>mermaid pie</li>
+</ul>
+<pre>
+<code class="mermaid">
+pie
+&quot;Dogs&quot; : 386
+&quot;Cats&quot; : 85
+&quot;Rats&quot; : 15
+</code>
+</pre>
+<ul>
+<li>math equation</li>
+</ul>
+<p><span class="math display">\[\begin{equation} \label{eq1}
+e=mc^2
+\end{equation}\]</span></p>
+<p>refer to this equation: The famous matter-energy equation <span
+class="math inline">\(\eqref{eq1}\)</span> proposed by Einstein...</p>
+]]></content>
+      <categories>
+        <category>blog</category>
+      </categories>
+      <tags>
+        <tag>growth modeling</tag>
+        <tag>moderation</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Three ways ChatGPT helps me in my academic writing</title>
+    <url>/posts/d4c8fa66/</url>
+    <content><![CDATA[<p>Some useful prompts for academic writing from a recent article in
+Nature Career Column.</p>
+<p>Link: https://www.nature.com/articles/d41586-024-01042-3</p>
+<blockquote>
+<p>The value that I derive from generative AI is not from the technology
+itself blindly churning out text, but from engaging with the tool and
+using my own expertise to refine what it produces. ——Dritjon Gruda</p>
+</blockquote>
+<h3>
+<span style="color:#040273;">Polishing academic writing</span>
+</h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">I’m writing a paper on [topic] for a leading [discipline] academic journal. What I tried to say in the following section is [specific point]. Please rephrase it for clarity, coherence and conciseness, ensuring each paragraph flows into the next. Remove jargon. Use a professional tone.</span><br></pre></td></tr></table></figure>
+<p>if it's not what you want or you want to improve its output:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">This isn’t quite what I meant. Let’s adjust this part.</span><br></pre></td></tr></table></figure>
+<p>or</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">This is much clearer, but let’s tweak the ending for a stronger transition to the next section.</span><br></pre></td></tr></table></figure>
+<h3>
+<span style="color:#040273;">Elevating peer review</span>
+</h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Assume you’re an expert and seasoned scholar with 20+ years of academic experience in [field]. On the basis of my summary of a paper in [field], where the main focus is on [general topic], provide a detailed review of this paper, in the following order: 1) briefly discuss its core content; 2) identify its limitations; and 3) explain the significance of each limitation in order of importance. Maintain a concise and professional tone throughout.</span><br></pre></td></tr></table></figure>
+<h3>
+<span style="color:#040273;">Optimizing editorial feedback</span>
+</h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">On the basis of these notes, draft a letter to the author. Highlight the manuscript’s key issues and clearly explain why the manuscript, despite its interesting topic, might not provide a substantial enough advancement to merit publication. Avoid jargon. Be direct. Maintain a professional and respectful tone throughout.</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>blog</category>
+      </categories>
+      <tags>
+        <tag>ChatGPT</tag>
+        <tag>Academic writing</tag>
+      </tags>
+  </entry>
 </search>

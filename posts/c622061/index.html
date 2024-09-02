@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 7.2.0">
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic,700,700italic%7CRoboto+Mono:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha256-XOqroi11tY4EFQMR9ZYwZWKj5ZXiftSx36RRuC3anlA=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.31/fancybox/fancybox.css" integrity="sha256-gkQVf8UKZgQ0HyuxL/VnacadJ+D2Kox2TCEBuNQg5+w=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"yongkangyang.com","root":"/","images":"/images","scheme":"Mist","darkmode":true,"version":"8.20.0","exturl":true,"hljswrap":true,"copycode":{"enable":false,"style":"mac"},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+    <meta name="description" content="The outcome is repeatedly measured in the moderation. There are two papers explaining the methods behind:  Curran, P. J., Bauer, D. J., &amp; Willoughby, M. T. (2004). Testing main effects and int">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to test moderation in growth modeling">
+<meta property="og:url" content="http://yongkangyang.com/posts/c622061/index.html">
+<meta property="og:site_name" content="YONGKANG YANG">
+<meta property="og:description" content="The outcome is repeatedly measured in the moderation. There are two papers explaining the methods behind:  Curran, P. J., Bauer, D. J., &amp; Willoughby, M. T. (2004). Testing main effects and int">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://yongkangyang.com/images/favicon-16x16-next.png">
+<meta property="article:published_time" content="2024-09-02T16:02:42.000Z">
+<meta property="article:modified_time" content="2024-09-02T16:05:14.782Z">
+<meta property="article:author" content="Yongkang Yang">
+<meta property="article:tag" content="growth modeling">
+<meta property="article:tag" content="moderation">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yongkangyang.com/images/favicon-16x16-next.png">
+
+
+<link rel="canonical" href="http://yongkangyang.com/posts/c622061/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://yongkangyang.com/posts/c622061/","path":"posts/c622061/","title":"How to test moderation in growth modeling"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>How to test moderation in growth modeling | YONGKANG YANG</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">YONGKANG YANG</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">PhD Candidate at RSM</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-house fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/About/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-research"><a href="/Research/" rel="section"><i class="fa fa-flask fa-fw"></i>Research</a></li><li class="menu-item menu-item-teaching"><a href="/Teaching/" rel="section"><i class="fa fa-chalkboard fa-fw"></i>Teaching</a></li><li class="menu-item menu-item-contact"><a href="/Contact/" rel="section"><i class="fa fa-address-book fa-fw"></i>Contact</a></li><li class="menu-item menu-item-blog"><a href="/posts/4f1dc535/" rel="section"><i class="fa fa-book fa-fw"></i>Blog</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="Searching..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#some-html-usage"><span class="nav-number">1.</span> <span class="nav-text">Some HTML usage:</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number"></span> <span class="nav-text">
+Heading 1
+</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">1.</span> <span class="nav-text">
+Heading 2
+</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link"><span class="nav-number">1.1.</span> <span class="nav-text">
+Heading 3
+</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#some-markdown-next-usage"><span class="nav-number">2.</span> <span class="nav-text">Some Markdown-Next usage:</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#primary-header"><span class="nav-number">2.0.1.</span> <span class="nav-text">Primary Header</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#info-header"><span class="nav-number">2.0.2.</span> <span class="nav-text">Info Header</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#success-header"><span class="nav-number">2.0.3.</span> <span class="nav-text">Success Header</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#warning-header"><span class="nav-number">2.0.4.</span> <span class="nav-text">Warning Header</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#danger-header"><span class="nav-number">2.0.5.</span> <span class="nav-text">Danger Header</span></a></li></ol></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Yongkang Yang</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://yongkangyang.com/posts/c622061/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Yongkang Yang">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YONGKANG YANG">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="How to test moderation in growth modeling | YONGKANG YANG">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          How to test moderation in growth modeling
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2024-09-03 00:02:42 / Modified: 00:05:14" itemprop="dateCreated datePublished" datetime="2024-09-03T00:02:42+08:00">2024-09-03</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/blog/" itemprop="url" rel="index"><span itemprop="name">blog</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>The outcome is repeatedly measured in the moderation.</p>
+<p>There are two papers explaining the methods behind:</p>
+<ol type="1">
+<li><p>Curran, P. J., Bauer, D. J., &amp; Willoughby, M. T. (2004).
+Testing main effects and interactions in latent curve analysis.
+Psychological Methods, 9(2), 220-237.</p></li>
+<li><p>Preacher, K. J., Curran, P. J., &amp; Bauer, D. J. (2006).
+Computational tools for probing interactions in multiple linear
+regression, multilevel modeling, and latent curve analysis. Journal of
+Educational and Behavioral Statistics, 31(4), 437-448.</p>
+<blockquote>
+<p>Note: online tools mentioned in this paper could be found at: <span class="exturl" data-url="aHR0cHM6Ly9ldXIwMy5zYWZlbGlua3MucHJvdGVjdGlvbi5vdXRsb29rLmNvbS8/dXJsPWh0dHAlM0ElMkYlMkZ3d3cucXVhbnRwc3kub3JnJTJGaW50ZXJhY3QlMkZpbmRleC5odG0mZGF0YT0wNSU3QzAyJTdDeS55YW5nQHJzbS5ubCU3QzZhNzRiMjE5MWNlYzRkYjY4NDBmMDhkY2JmY2I4MzljJTdDNzE1OTAyZDZmNjNlNGI4ZDkyOWI0YmIxNzBiYWQ0OTIlN0MwJTdDMCU3QzYzODU5NjEyODAzNjY4MDkwNiU3Q1Vua25vd24lN0NUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjAlM0QlN0MwJTdDJTdDJTdDJnNkYXRhPTVtM2RIRVJuSkEzMlh1JTJCSnREaDclMkJyR28wME9GS0loMEpBR3pENHNxdmhJJTNEJnJlc2VydmVkPTA=">http://www.quantpsy.org/interact/index.htm<i class="fa fa-external-link-alt"></i></span></p>
+</blockquote></li>
+</ol>
+<p>Though moderation was not a main focus in this classic paper, gender
+as a moderator appeared in the growth modeling.</p>
+<ol type="1">
+<li>Ployhart, R. E., &amp; Vandenberg, R. J. (2010). Longitudinal
+research: The theory, design, and analysis of change. <em>Journal of
+management</em>, <em>36</em>(1), 94-120.</li>
+</ol>
+<p><strong>Two example articles deployed moderation in latent growth
+modeling:</strong></p>
+<p><strong>AMJ:</strong> more details in Online Supplemental
+Materials:</p>
+<ul>
+<li>Deng, Y., Lin, W., Song, Y., Wang, M., Cai, D., &amp; Liu, J. (In
+press). Socialization as a political arena: A multi-agent interactionist
+perspective to understand political skill and newcomer socialization
+rates. <em>Academy of Management Journal</em>.</li>
+</ul>
+<p><strong>JAP</strong>: Multilevel moderation</p>
+<ul>
+<li>Miron-Spektor, E., Vashdi, D. R., &amp; Gopher, H. (2022). Bright
+sparks and enquiring minds: Differential effects of goal orientation on
+the creativity trajectory. <em>Journal of Applied Psychology</em>,
+<em>107</em>(2), 310-218.</li>
+</ul>
+<hr />
+<h2 id="some-html-usage">Some HTML usage:</h2>
+<h1>
+<span style="color:#040273;">Heading 1</span>
+</h1>
+<h2>
+<span style="color:#040273;">Heading 2</span>
+</h2>
+<h3>
+<span style="color:#040273;">Heading 3</span>
+</h3>
+<p><span
+style="color:white;background:black;font-size:50px;font-family:lato;">Example
+text</span></p>
+<p><b>Bold text</b></p>
+<p><b><span style="color:rgb(255, 0, 255);">Bold Purple
+text</span></b></p>
+<h2 id="some-markdown-next-usage">Some Markdown-Next usage:</h2>
+<p>Link: <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9taXN0L2RvY3MvdGhpcmQtcGFydHktc2VydmljZXMvbWF0aC1lcXVhdGlvbnMjbWp4LWVxbiUzQWVxMQ==">Hexo-next-plugins<i class="fa fa-external-link-alt"></i></span></p>
+<ul>
+<li><p>purple note <div class="note primary"><h4 id="primary-header">Primary Header</h4>
+<p><strong>Welcome</strong> to <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo!<i class="fa fa-external-link-alt"></i></span></p>
+</div></p></li>
+<li><p>blue note <div class="note info"><h4 id="info-header">Info Header</h4>
+<p><strong>Welcome</strong> to <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo!<i class="fa fa-external-link-alt"></i></span></p>
+</div></p></li>
+<li><p>green note <div class="note success"><h4 id="success-header">Success Header</h4>
+<p><strong>Welcome</strong> to <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo!<i class="fa fa-external-link-alt"></i></span></p>
+</div></p></li>
+<li><p>yellow note <div class="note warning"><h4 id="warning-header">Warning Header</h4>
+<p><strong>Welcome</strong> to <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo!<i class="fa fa-external-link-alt"></i></span></p>
+</div></p></li>
+<li><p>red note <div class="note danger"><h4 id="danger-header">Danger Header</h4>
+<p><strong>Welcome</strong> to <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo!<i class="fa fa-external-link-alt"></i></span></p>
+</div></p></li>
+<li><p>Link grid</p></li>
+</ul>
+<div class="link-grid"><div class="link-grid-container">
+<object class="link-grid-image" data="/images/Google_Scholar.png"></object>
+<p>Google Scholar</p><p>follow my research</p>
+<a target="_blank" rel="noopener" href="https://scholar.google.com/citations?hl=en&user=g5nED5gAAAAJ"></a>
+</div><div class="link-grid-container">
+<object class="link-grid-image" data="/images/RG.png"></object>
+<p>ResearchGate</p><p>follow my research</p>
+<a target="_blank" rel="noopener" href="https://www.researchgate.net/profile/Yongkang-Yang-6"></a>
+</div><div class="link-grid-container">
+<object class="link-grid-image" data="/images/linkedin.png"></object>
+<p>LinkedIn</p><p>connect</p>
+<a target="_blank" rel="noopener" href="https://www.linkedin.com/in/yongkang-yang-0530a1205/"></a>
+</div><div class="link-grid-container">
+<object class="link-grid-image" data="/images/orcid.png"></object>
+<p>ORCID</p><p>connecting research and researchers</p>
+<a target="_blank" rel="noopener" href="https://orcid.org/0000-0001-6134-1296"></a>
+</div><div class="link-grid-container">
+<object class="link-grid-image" data="/images/rsm.png"></object>
+<p>Homepage</p><p>RSM PhD Candidate</p>
+<a target="_blank" rel="noopener" href="https://www.rsm.nl/people/yongkang-yang/"></a>
+</div><div class="link-grid-container">
+<object class="link-grid-image" data="/images/github.png"></object>
+<p>Github</p><p>projects</p>
+<a target="_blank" rel="noopener" href="https://github.com/yongkang-yang"></a>
+</div></div>
+<ul>
+<li>Two tabs</li>
+</ul>
+<div class="tabs" id="address"><ul class="nav-tabs"><li class="tab active"><a href="#address-1">Address 1</a></li><li class="tab"><a href="#address-2">Address 2</a></li></ul><div class="tab-content"><div class="tab-pane active" id="address-1"><p><strong>Visiting address</strong> Office: T04-01 Burgemeester Oudlaan
+50 3062 PA Rotterdam Netherlands</p></div><div class="tab-pane" id="address-2"><p><strong>Postal address</strong> Postbus 1738 3000 DR Rotterdam
+Netherlands</p></div></div></div>
+<ul>
+<li>button with absolute URL</li>
+</ul>
+<div class="text-center">
+<a class="btn" target="_blank" rel="noopener" href="https://github.com" title="GitHub"><i class="fab fa-github fa-fw fa-lg"></i>GitHub</a>
+</div>
+<ul>
+<li>Group Picture</li>
+</ul>
+<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="/images/favicon-16x16-next.png" /></div><div class="group-picture-column"><img
+src="/images/favicon-16x16-next.png" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img
+src="/images/favicon-16x16-next.png" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img
+src="/images/favicon-16x16-next.png" /></div><div class="group-picture-column"><img
+src="/images/favicon-16x16-next.png" /></div></div></div>
+<ul>
+<li>mermaid pie</li>
+</ul>
+<pre>
+<code class="mermaid">
+pie
+&quot;Dogs&quot; : 386
+&quot;Cats&quot; : 85
+&quot;Rats&quot; : 15
+</code>
+</pre>
+<ul>
+<li>math equation</li>
+</ul>
+<p><span class="math display">\[\begin{equation} \label{eq1}
+e=mc^2
+\end{equation}\]</span></p>
+<p>refer to this equation: The famous matter-energy equation <span
+class="math inline">\(\eqref{eq1}\)</span> proposed by Einstein...</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/growth-modeling/" rel="tag"># growth modeling</a>
+              <a href="/tags/moderation/" rel="tag"># moderation</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/posts/d4c8fa66/" rel="prev" title="Three ways ChatGPT helps me in my academic writing">
+                  <i class="fa fa-angle-left"></i> Three ways ChatGPT helps me in my academic writing
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments utterances-container"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fa fa-pencil"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">by Yongkang Yang</span>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.31/fancybox/fancybox.umd.js" integrity="sha256-a+H7FYzJv6oU2hfsfDGM2Ohw/cR9v+hPfxHCLdmCrE8=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+  <script class="next-config" data-name="mermaid" type="application/json">{"enable":true,"theme":{"light":"default","dark":"dark"},"js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.0/mermaid.min.js","integrity":"sha256-stuqcu2FrjYCXDOytWFA5SoUE/r3nkp6gTglzNSlavU="}}</script>
+  <script src="/js/third-party/tags/mermaid.js"></script>
+
+
+  <script src="/js/third-party/fancybox.js"></script>
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"ams","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+<script class="next-config" data-name="utterances" type="application/json">{"enable":"ture","repo":"yongkang-yang/yongkang-yang.github.io","issue_term":"pathname","theme":"github-light"}</script>
+<script src="/js/third-party/comments/utterances.js"></script>
+
+</body>
+</html>
