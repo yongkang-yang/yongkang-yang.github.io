@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>How to batch edit title case into sentence case for multuple items</title>
+    <title>How to batch edit title case into sentence case for multiple items in Zotero</title>
     <url>/posts/4e75520/</url>
     <content><![CDATA[<p>Zotero users might use APA 7<sup>th</sup> for their reference. There
 is a problem when the metadata in Zotero is title case, it is laborious
@@ -33,6 +33,31 @@ doi, etc.) are right.</p>
         <tag>zotero</tag>
         <tag>javascript</tag>
         <tag>sentence case</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Welcome to my site!</title>
+    <url>/posts/4f1dc535/</url>
+    <content><![CDATA[<p>Hi there!</p>
+<p>Welcome to my website!!</p>
+<p>I created this little corner of the internet - to share all the
+<strong>handy tools</strong>, <strong>formulas</strong>, <strong>code
+snippets</strong>, and other useful resources I've collected. Feel free
+to explore everything using that "<strong>Search</strong>" button at the
+top. If you find anything unavailable or outdated, please email me at <a
+href="mailto:research@yongkangyang.com">research@yongkangyang.com</a> so
+I can keep things up-to-date.</p>
+<p>Thanks for stopping by, and happy life!</p>
+<div class="note primary"><h4 id="section">↓↓↓</h4>
+<p><span class="exturl" data-url="aHR0cDovL3d3dy55b25na2FuZ3lhbmcuY29tL2NhdGVnb3JpZXMvYmxvZy8=">Click this
+link and start to explore!<i class="fa fa-external-link-alt"></i></span></p>
+</div>
+]]></content>
+      <categories>
+        <category>blog</category>
+      </categories>
+      <tags>
+        <tag>support</tag>
       </tags>
   </entry>
   <entry>
@@ -121,65 +146,6 @@ filed, papers will reach out to you.</p>
       </tags>
   </entry>
   <entry>
-    <title>Welcome to my site!</title>
-    <url>/posts/4f1dc535/</url>
-    <content><![CDATA[<p>Hi there!</p>
-<p>Welcome to my website!!</p>
-<p>I created this little corner of the internet - to share all the
-<strong>handy tools</strong>, <strong>formulas</strong>, <strong>code
-snippets</strong>, and other useful resources I've collected. Feel free
-to explore everything using that "<strong>Search</strong>" button at the
-top. If you find anything unavailable or outdated, please email me at <a
-href="mailto:research@yongkangyang.com">research@yongkangyang.com</a> so
-I can keep things up-to-date.</p>
-<p>Thanks for stopping by, and happy life!</p>
-<div class="note primary"><h4 id="section">↓↓↓</h4>
-<p><span class="exturl" data-url="aHR0cDovL3d3dy55b25na2FuZ3lhbmcuY29tL2NhdGVnb3JpZXMvYmxvZy8=">Click this
-link and start to explore!<i class="fa fa-external-link-alt"></i></span></p>
-</div>
-]]></content>
-      <categories>
-        <category>blog</category>
-      </categories>
-      <tags>
-        <tag>support</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Mplus Code for Measurement invariance and LCS model</title>
-    <url>/posts/b97fc5b4/</url>
-    <content><![CDATA[<div class="note info"><h4 id="info">Info</h4>
-<p><strong>Click this link to access the file</strong> <span class="exturl" data-url="aHR0cHM6Ly9vc2YuaW8vOTd5bjQv">OSF link<i class="fa fa-external-link-alt"></i></span></p>
-</div>
-<p><strong>Reference</strong>:</p>
-<p>Li, W.-D., Wang, J., Allen, T., Zhang, X., Yu, K., Zhang, H., Huang,
-J. L., Liu, M., &amp; Li, A. (2024). Getting under the skin? Influences
-of work–family experiences on personality trait adaptation and
-reciprocal relationships. <em>Journal of Personality and Social
-Psychology, 126</em>(4), 694–718. <span class="exturl" data-url="aHR0cHM6Ly9wc3ljbmV0LmFwYS5vcmcvZG9pLzEwLjEwMzcvcHNwcDAwMDA0NzY=">https://doi.org/10.1037/pspp0000476<i class="fa fa-external-link-alt"></i></span></p>
-<blockquote>
-<p>Strongly Recommend Prof. Wendong Li's Website for longitudinal
-research: <span class="exturl" data-url="aHR0cHM6Ly93d3cud2VuZG9uZ2xpLmNvbS9pbmRleC5waHAvZm9yLXNoYXJpbmcv">https://www.wendongli.com/index.php/for-sharing/<i class="fa fa-external-link-alt"></i></span></p>
-</blockquote>
-<h3>
-<span style="color:#040273;">Latent change score model</span>
-</h3>
-<p><b>A Replication of <span class="exturl" data-url="aHR0cHM6Ly9kb2kub3JnLzEwLjExNzcvMTA5NDQyODEyMDk2Mzc4OA==">Matusik et al
-(2021)<i class="fa fa-external-link-alt"></i></span></b></p>
-<p>The results and Mplus code can be found in this repo:</p>
-<p><b>Mplus Code of  <span class="exturl" data-url="aHR0cHM6Ly9wc3ljbmV0LmFwYS5vcmcvZG9pLzEwLjEwMzcvYXBsMDAwMTA0Mg==">Steffen et al
-(2021)<i class="fa fa-external-link-alt"></i></span></b></p>
-<figure class="highlight plaintext"><figcaption><span>syntax</span></figcaption><table><tr><td class="code"><pre><span class="line">Mplus syntax for hypothesis 1 sensitivity analysis</span><br><span class="line"></span><br><span class="line">TITLE:	</span><br><span class="line">    Merger paper H1</span><br><span class="line"></span><br><span class="line">DATA: </span><br><span class="line">    FILE IS &#x27;g:/my drive/merger/latent.dat&#x27;;</span><br><span class="line"></span><br><span class="line">VARIABLE:	</span><br><span class="line">    NAMES ARE merge size js5 js7 abs5 abs7 ss5 ss7;</span><br><span class="line">    USEVARIABLES ARE merge size js5 js7;</span><br><span class="line">    </span><br><span class="line">MODEL: </span><br><span class="line">    !Latent True Scores</span><br><span class="line">    js1 BY js5@1;</span><br><span class="line">    js2 BY js7@1;</span><br><span class="line"></span><br><span class="line">    !Specifies the mean and variance of js1.</span><br><span class="line">    [js1]; js1;</span><br><span class="line">    !Fixes the mean and variance of js2 to 0.</span><br><span class="line">    [js2@0]; js2@0;</span><br><span class="line">    [js5-js7@0];</span><br><span class="line">    !Sets the residual variances of js5 and js7 to be equal and labels them as resvar.</span><br><span class="line">    js5-js7 (resvar);</span><br><span class="line"></span><br><span class="line">    !Autoregressions</span><br><span class="line">    js2 ON js1@1;</span><br><span class="line"></span><br><span class="line">    !Latent Change Factors</span><br><span class="line">    jsd BY js2@1;</span><br><span class="line">    !Fixes the mean and variance of jsd to 0.</span><br><span class="line">    [jsd@0];</span><br><span class="line">    jsd@0;</span><br><span class="line"></span><br><span class="line">    !Hypothesis</span><br><span class="line">    jsd ON merge size;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">OUTPUT:</span><br><span class="line">    STAND CINT;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>blog</category>
-      </categories>
-      <tags>
-        <tag>measurement invariance</tag>
-        <tag>latent change score model</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>How to find scales?</title>
     <url>/posts/98101af5/</url>
     <content><![CDATA[<h3>
@@ -238,6 +204,76 @@ author name" + "example item".</p>
       </tags>
   </entry>
   <entry>
+    <title>Three ways ChatGPT helps me in my academic writing</title>
+    <url>/posts/d4c8fa66/</url>
+    <content><![CDATA[<p>Some useful prompts for academic writing from a recent article in
+Nature Career Column.</p>
+<p>Link: https://www.nature.com/articles/d41586-024-01042-3</p>
+<blockquote>
+<p>The value that I derive from generative AI is not from the technology
+itself blindly churning out text, but from engaging with the tool and
+using my own expertise to refine what it produces. ——Dritjon Gruda</p>
+</blockquote>
+<h3>
+<span style="color:#040273;">Polishing academic writing</span>
+</h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">I’m writing a paper on [topic] for a leading [discipline] academic journal. What I tried to say in the following section is [specific point]. Please rephrase it for clarity, coherence and conciseness, ensuring each paragraph flows into the next. Remove jargon. Use a professional tone.</span><br></pre></td></tr></table></figure>
+<p>if it's not what you want or you want to improve its output:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">This isn’t quite what I meant. Let’s adjust this part.</span><br></pre></td></tr></table></figure>
+<p>or</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">This is much clearer, but let’s tweak the ending for a stronger transition to the next section.</span><br></pre></td></tr></table></figure>
+<h3>
+<span style="color:#040273;">Elevating peer review</span>
+</h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Assume you’re an expert and seasoned scholar with 20+ years of academic experience in [field]. On the basis of my summary of a paper in [field], where the main focus is on [general topic], provide a detailed review of this paper, in the following order: 1) briefly discuss its core content; 2) identify its limitations; and 3) explain the significance of each limitation in order of importance. Maintain a concise and professional tone throughout.</span><br></pre></td></tr></table></figure>
+<h3>
+<span style="color:#040273;">Optimizing editorial feedback</span>
+</h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">On the basis of these notes, draft a letter to the author. Highlight the manuscript’s key issues and clearly explain why the manuscript, despite its interesting topic, might not provide a substantial enough advancement to merit publication. Avoid jargon. Be direct. Maintain a professional and respectful tone throughout.</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>blog</category>
+      </categories>
+      <tags>
+        <tag>ChatGPT</tag>
+        <tag>Academic writing</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Mplus Code for Measurement invariance and LCS model</title>
+    <url>/posts/b97fc5b4/</url>
+    <content><![CDATA[<div class="note info"><h4 id="info">Info</h4>
+<p><strong>Click this link to access the file</strong> <span class="exturl" data-url="aHR0cHM6Ly9vc2YuaW8vOTd5bjQv">OSF link<i class="fa fa-external-link-alt"></i></span></p>
+</div>
+<p><strong>Reference</strong>:</p>
+<p>Li, W.-D., Wang, J., Allen, T., Zhang, X., Yu, K., Zhang, H., Huang,
+J. L., Liu, M., &amp; Li, A. (2024). Getting under the skin? Influences
+of work–family experiences on personality trait adaptation and
+reciprocal relationships. <em>Journal of Personality and Social
+Psychology, 126</em>(4), 694–718. <span class="exturl" data-url="aHR0cHM6Ly9wc3ljbmV0LmFwYS5vcmcvZG9pLzEwLjEwMzcvcHNwcDAwMDA0NzY=">https://doi.org/10.1037/pspp0000476<i class="fa fa-external-link-alt"></i></span></p>
+<blockquote>
+<p>Strongly Recommend Prof. Wendong Li's Website for longitudinal
+research: <span class="exturl" data-url="aHR0cHM6Ly93d3cud2VuZG9uZ2xpLmNvbS9pbmRleC5waHAvZm9yLXNoYXJpbmcv">https://www.wendongli.com/index.php/for-sharing/<i class="fa fa-external-link-alt"></i></span></p>
+</blockquote>
+<h3>
+<span style="color:#040273;">Latent change score model</span>
+</h3>
+<p><b>A Replication of <span class="exturl" data-url="aHR0cHM6Ly9kb2kub3JnLzEwLjExNzcvMTA5NDQyODEyMDk2Mzc4OA==">Matusik et al
+(2021)<i class="fa fa-external-link-alt"></i></span></b></p>
+<p>The results and Mplus code can be found in this repo:</p>
+<p><b>Mplus Code of  <span class="exturl" data-url="aHR0cHM6Ly9wc3ljbmV0LmFwYS5vcmcvZG9pLzEwLjEwMzcvYXBsMDAwMTA0Mg==">Steffen et al
+(2021)<i class="fa fa-external-link-alt"></i></span></b></p>
+<figure class="highlight plaintext"><figcaption><span>syntax</span></figcaption><table><tr><td class="code"><pre><span class="line">Mplus syntax for hypothesis 1 sensitivity analysis</span><br><span class="line"></span><br><span class="line">TITLE:	</span><br><span class="line">    Merger paper H1</span><br><span class="line"></span><br><span class="line">DATA: </span><br><span class="line">    FILE IS &#x27;g:/my drive/merger/latent.dat&#x27;;</span><br><span class="line"></span><br><span class="line">VARIABLE:	</span><br><span class="line">    NAMES ARE merge size js5 js7 abs5 abs7 ss5 ss7;</span><br><span class="line">    USEVARIABLES ARE merge size js5 js7;</span><br><span class="line">    </span><br><span class="line">MODEL: </span><br><span class="line">    !Latent True Scores</span><br><span class="line">    js1 BY js5@1;</span><br><span class="line">    js2 BY js7@1;</span><br><span class="line"></span><br><span class="line">    !Specifies the mean and variance of js1.</span><br><span class="line">    [js1]; js1;</span><br><span class="line">    !Fixes the mean and variance of js2 to 0.</span><br><span class="line">    [js2@0]; js2@0;</span><br><span class="line">    [js5-js7@0];</span><br><span class="line">    !Sets the residual variances of js5 and js7 to be equal and labels them as resvar.</span><br><span class="line">    js5-js7 (resvar);</span><br><span class="line"></span><br><span class="line">    !Autoregressions</span><br><span class="line">    js2 ON js1@1;</span><br><span class="line"></span><br><span class="line">    !Latent Change Factors</span><br><span class="line">    jsd BY js2@1;</span><br><span class="line">    !Fixes the mean and variance of jsd to 0.</span><br><span class="line">    [jsd@0];</span><br><span class="line">    jsd@0;</span><br><span class="line"></span><br><span class="line">    !Hypothesis</span><br><span class="line">    jsd ON merge size;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">OUTPUT:</span><br><span class="line">    STAND CINT;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>blog</category>
+      </categories>
+      <tags>
+        <tag>measurement invariance</tag>
+        <tag>latent change score model</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>How to test moderation in growth modeling</title>
     <url>/posts/c622061/</url>
     <content><![CDATA[<p>The outcome is repeatedly measured in the moderation.</p>
@@ -278,107 +314,6 @@ sparks and enquiring minds: Differential effects of goal orientation on
 the creativity trajectory. <em>Journal of Applied Psychology</em>,
 <em>107</em>(2), 310-218.</li>
 </ul>
-<hr />
-<h2 id="some-html-usage">Some HTML usage:</h2>
-<h1>
-<span style="color:#040273;">Heading 1</span>
-</h1>
-<h2>
-<span style="color:#040273;">Heading 2</span>
-</h2>
-<h3>
-<span style="color:#040273;">Heading 3</span>
-</h3>
-<p><span
-style="color:white;background:black;font-size:50px;font-family:lato;">Example
-text</span></p>
-<p><b>Bold text</b></p>
-<p><b><span style="color:rgb(255, 0, 255);">Bold Purple
-text</span></b></p>
-<h2 id="some-markdown-next-usage">Some Markdown-Next usage:</h2>
-<p>Link: <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy9taXN0L2RvY3MvdGhpcmQtcGFydHktc2VydmljZXMvbWF0aC1lcXVhdGlvbnMjbWp4LWVxbiUzQWVxMQ==">Hexo-next-plugins<i class="fa fa-external-link-alt"></i></span></p>
-<ul>
-<li><p>purple note <div class="note primary"><h4 id="primary-header">Primary Header</h4>
-<p><strong>Welcome</strong> to <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo!<i class="fa fa-external-link-alt"></i></span></p>
-</div></p></li>
-<li><p>blue note <div class="note info"><h4 id="info-header">Info Header</h4>
-<p><strong>Welcome</strong> to <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo!<i class="fa fa-external-link-alt"></i></span></p>
-</div></p></li>
-<li><p>green note <div class="note success"><h4 id="success-header">Success Header</h4>
-<p><strong>Welcome</strong> to <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo!<i class="fa fa-external-link-alt"></i></span></p>
-</div></p></li>
-<li><p>yellow note <div class="note warning"><h4 id="warning-header">Warning Header</h4>
-<p><strong>Welcome</strong> to <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo!<i class="fa fa-external-link-alt"></i></span></p>
-</div></p></li>
-<li><p>red note <div class="note danger"><h4 id="danger-header">Danger Header</h4>
-<p><strong>Welcome</strong> to <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo!<i class="fa fa-external-link-alt"></i></span></p>
-</div></p></li>
-<li><p>Link grid</p></li>
-</ul>
-<div class="link-grid"><div class="link-grid-container">
-<object class="link-grid-image" data="/images/Google_Scholar.png"></object>
-<p>Google Scholar</p><p>follow my research</p>
-<a href="https://scholar.google.com/citations?hl=en&user=g5nED5gAAAAJ"></a>
-</div><div class="link-grid-container">
-<object class="link-grid-image" data="/images/RG.png"></object>
-<p>ResearchGate</p><p>follow my research</p>
-<a href="https://www.researchgate.net/profile/Yongkang-Yang-6"></a>
-</div><div class="link-grid-container">
-<object class="link-grid-image" data="/images/linkedin.png"></object>
-<p>LinkedIn</p><p>connect</p>
-<a href="https://www.linkedin.com/in/yongkang-yang-0530a1205/"></a>
-</div><div class="link-grid-container">
-<object class="link-grid-image" data="/images/orcid.png"></object>
-<p>ORCID</p><p>connecting research and researchers</p>
-<a href="https://orcid.org/0000-0001-6134-1296"></a>
-</div><div class="link-grid-container">
-<object class="link-grid-image" data="/images/rsm.png"></object>
-<p>Homepage</p><p>RSM PhD Candidate</p>
-<a href="https://www.rsm.nl/people/yongkang-yang/"></a>
-</div><div class="link-grid-container">
-<object class="link-grid-image" data="/images/github.png"></object>
-<p>Github</p><p>projects</p>
-<a href="https://github.com/yongkang-yang"></a>
-</div></div>
-<ul>
-<li>Two tabs</li>
-</ul>
-<div class="tabs" id="address"><ul class="nav-tabs"><li class="tab active"><a href="#address-1">Address 1</a></li><li class="tab"><a href="#address-2">Address 2</a></li></ul><div class="tab-content"><div class="tab-pane active" id="address-1"><p><strong>Visiting address</strong> Office: T04-01 Burgemeester Oudlaan
-50 3062 PA Rotterdam Netherlands</p></div><div class="tab-pane" id="address-2"><p><strong>Postal address</strong> Postbus 1738 3000 DR Rotterdam
-Netherlands</p></div></div></div>
-<ul>
-<li>button with absolute URL</li>
-</ul>
-<div class="text-center">
-<a class="btn" href="https://github.com" title="GitHub"><i class="fab fa-github fa-fw fa-lg"></i>GitHub</a>
-</div>
-<ul>
-<li>Group Picture</li>
-</ul>
-<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="/images/favicon-16x16-next.png" /></div><div class="group-picture-column"><img
-src="/images/favicon-16x16-next.png" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img
-src="/images/favicon-16x16-next.png" /></div></div><div class="group-picture-row"><div class="group-picture-column"><img
-src="/images/favicon-16x16-next.png" /></div><div class="group-picture-column"><img
-src="/images/favicon-16x16-next.png" /></div></div></div>
-<ul>
-<li>mermaid pie</li>
-</ul>
-<pre>
-<code class="mermaid">
-pie
-&quot;Dogs&quot; : 386
-&quot;Cats&quot; : 85
-&quot;Rats&quot; : 15
-</code>
-</pre>
-<ul>
-<li>math equation</li>
-</ul>
-<p><span class="math display">\[\begin{equation} \label{eq1}
-e=mc^2
-\end{equation}\]</span></p>
-<p>refer to this equation: The famous matter-energy equation <span
-class="math inline">\(\eqref{eq1}\)</span> proposed by Einstein...</p>
 ]]></content>
       <categories>
         <category>blog</category>
@@ -386,42 +321,6 @@ class="math inline">\(\eqref{eq1}\)</span> proposed by Einstein...</p>
       <tags>
         <tag>growth modeling</tag>
         <tag>moderation</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Three ways ChatGPT helps me in my academic writing</title>
-    <url>/posts/d4c8fa66/</url>
-    <content><![CDATA[<p>Some useful prompts for academic writing from a recent article in
-Nature Career Column.</p>
-<p>Link: https://www.nature.com/articles/d41586-024-01042-3</p>
-<blockquote>
-<p>The value that I derive from generative AI is not from the technology
-itself blindly churning out text, but from engaging with the tool and
-using my own expertise to refine what it produces. ——Dritjon Gruda</p>
-</blockquote>
-<h3>
-<span style="color:#040273;">Polishing academic writing</span>
-</h3>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">I’m writing a paper on [topic] for a leading [discipline] academic journal. What I tried to say in the following section is [specific point]. Please rephrase it for clarity, coherence and conciseness, ensuring each paragraph flows into the next. Remove jargon. Use a professional tone.</span><br></pre></td></tr></table></figure>
-<p>if it's not what you want or you want to improve its output:</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">This isn’t quite what I meant. Let’s adjust this part.</span><br></pre></td></tr></table></figure>
-<p>or</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">This is much clearer, but let’s tweak the ending for a stronger transition to the next section.</span><br></pre></td></tr></table></figure>
-<h3>
-<span style="color:#040273;">Elevating peer review</span>
-</h3>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Assume you’re an expert and seasoned scholar with 20+ years of academic experience in [field]. On the basis of my summary of a paper in [field], where the main focus is on [general topic], provide a detailed review of this paper, in the following order: 1) briefly discuss its core content; 2) identify its limitations; and 3) explain the significance of each limitation in order of importance. Maintain a concise and professional tone throughout.</span><br></pre></td></tr></table></figure>
-<h3>
-<span style="color:#040273;">Optimizing editorial feedback</span>
-</h3>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">On the basis of these notes, draft a letter to the author. Highlight the manuscript’s key issues and clearly explain why the manuscript, despite its interesting topic, might not provide a substantial enough advancement to merit publication. Avoid jargon. Be direct. Maintain a professional and respectful tone throughout.</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>blog</category>
-      </categories>
-      <tags>
-        <tag>ChatGPT</tag>
-        <tag>Academic writing</tag>
       </tags>
   </entry>
 </search>
