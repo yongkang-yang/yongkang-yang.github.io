@@ -208,7 +208,9 @@ author name" + "example item".</p>
     <url>/posts/d4c8fa66/</url>
     <content><![CDATA[<p>Some useful prompts for academic writing from a recent article in
 Nature Career Column.</p>
-<p>Link: https://www.nature.com/articles/d41586-024-01042-3</p>
+<div class="text-center">
+<a class="btn" href="https://www.nature.com/articles/d41586-024-01042-3" title="nature"><i class="fa-regular fa-n"></i>Nature</a>
+</div>
 <blockquote>
 <p>The value that I derive from generative AI is not from the technology
 itself blindly churning out text, but from engaging with the tool and

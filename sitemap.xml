@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yongkangyang.com/posts/d4c8fa66/</loc>
+    
+    <lastmod>2024-09-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://yongkangyang.com/posts/4e75520/</loc>
     
     <lastmod>2024-09-02</lastmod>
@@ -12,15 +21,6 @@
   
   <url>
     <loc>http://yongkangyang.com/posts/c622061/</loc>
-    
-    <lastmod>2024-09-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://yongkangyang.com/posts/d4c8fa66/</loc>
     
     <lastmod>2024-09-02</lastmod>
     
