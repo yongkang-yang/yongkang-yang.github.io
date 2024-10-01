@@ -1,6 +1,173 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Welcome to my site!</title>
+    <url>/posts/4f1dc535/</url>
+    <content><![CDATA[<p>Hi there!</p>
+<p>Welcome to my website!!</p>
+<p>I created this little corner of the internet - to share all the
+<strong>handy tools</strong>, <strong>formulas</strong>, <strong>code
+snippets</strong>, and other useful resources I've collected. Feel free
+to explore everything using that "<strong>Search</strong>" button at the
+top. If you find anything unavailable or outdated, please email me at <a
+href="mailto:research@yongkangyang.com">research@yongkangyang.com</a> so
+I can keep things up-to-date.</p>
+<p>Thanks for stopping by, and happy life!</p>
+<div class="note primary"><h4 id="section">↓↓↓</h4>
+<p><span class="exturl" data-url="aHR0cDovL3d3dy55b25na2FuZ3lhbmcuY29tL2NhdGVnb3JpZXMvYmxvZy8=">Click this
+link and start to explore!<i class="fa fa-external-link-alt"></i></span></p>
+</div>
+]]></content>
+      <categories>
+        <category>blog</category>
+      </categories>
+      <tags>
+        <tag>support</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>How to find scales?</title>
+    <url>/posts/98101af5/</url>
+    <content><![CDATA[<h3>
+<span style="color:#040273;">Scales</span>
+</h3>
+<p>There are scales available in the website. For example:</p>
+<ol type="1">
+<li><p><span class="exturl" data-url="aHR0cHM6Ly9zamRtLm9yZy9kbWlkaS9pbmRleC5odG1s">The Decision Making
+Individual Differences Inventory (DMIDI)<i class="fa fa-external-link-alt"></i></span> &gt;The DMIDI is a
+catalogue of over 200 individual difference measures commonly used in
+judgment and decision-making research. An alphabetical list of all of
+the over 170 measures covered by the DMIDI:
+https://sjdm.org/dmidi/All_Scales.html</p></li>
+<li><p><span class="exturl" data-url="aHR0cHM6Ly93d3cub2Jocm0ubmV0">OBHRM百科-A Chinese website<i class="fa fa-external-link-alt"></i></span>
+&gt;
+OBHRM百科是一个国内OBHRM学者共建共享的OBHRM公益知识库。我们坚信，通过所有同仁的共同努力，可以为国内OBHRM研究、教学创造更便利的条件。</p></li>
+</ol>
+<ul>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cub2Jocm0ubmV0L2luZGV4LnBocC8lRTYlQTAlOEYlRTclOUIlQUU6JUU4JThCJUIxJUU2JTk2JTg3JUU5JTg3JThGJUU4JUExJUE4">For
+English Scales<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cub2Jocm0ubmV0L2luZGV4LnBocC8lRTYlQTAlOEYlRTclOUIlQUU6JUU0JUI4JUFEJUU2JTk2JTg3JUU5JTg3JThGJUU4JUExJUE4">For
+Chinese Scales<i class="fa fa-external-link-alt"></i></span></li>
+</ul>
+<ol start="3" type="1">
+<li><span class="exturl" data-url="aHR0cHM6Ly9kb2kub3JnLzEwLjIzMDcvMjY2Njk5OQ==">Edmondson (1999)<i class="fa fa-external-link-alt"></i></span> in
+Appendix
+<ul>
+<li>Supportiveness of organization context</li>
+<li>Task design</li>
+<li>Clear Direction</li>
+<li>Team composition</li>
+<li>Team efficacy</li>
+<li>Team psychological Safety</li>
+<li>Team Learning Coaching</li>
+<li>Team learning behavior</li>
+<li>Team performance</li>
+<li>Internal motivation</li>
+<li>Team learning behavior (observer)</li>
+<li>Team performance (obseerver)</li>
+</ul></li>
+<li>to be continued</li>
+</ol>
+<h3>
+<span style="color:#040273;">Google Scholar</span>
+</h3>
+<p>If you find one relevant scale but the paper only revealed on item or
+two. Then it's easy to use the keyword searching like: "scale name or
+author name" + "example item".</p>
+]]></content>
+      <categories>
+        <category>blog</category>
+      </categories>
+      <tags>
+        <tag>scales</tag>
+        <tag>measures</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Mplus Code for Measurement invariance and LCS model</title>
+    <url>/posts/b97fc5b4/</url>
+    <content><![CDATA[<div class="note info"><h4 id="info">Info</h4>
+<p><strong>Click this link to access the file</strong> <span class="exturl" data-url="aHR0cHM6Ly9vc2YuaW8vOTd5bjQv">OSF link<i class="fa fa-external-link-alt"></i></span></p>
+</div>
+<p><strong>Reference</strong>:</p>
+<p>Li, W.-D., Wang, J., Allen, T., Zhang, X., Yu, K., Zhang, H., Huang,
+J. L., Liu, M., &amp; Li, A. (2024). Getting under the skin? Influences
+of work–family experiences on personality trait adaptation and
+reciprocal relationships. <em>Journal of Personality and Social
+Psychology, 126</em>(4), 694–718. <span class="exturl" data-url="aHR0cHM6Ly9wc3ljbmV0LmFwYS5vcmcvZG9pLzEwLjEwMzcvcHNwcDAwMDA0NzY=">https://doi.org/10.1037/pspp0000476<i class="fa fa-external-link-alt"></i></span></p>
+<blockquote>
+<p>Strongly Recommend Prof. Wendong Li's Website for longitudinal
+research: <span class="exturl" data-url="aHR0cHM6Ly93d3cud2VuZG9uZ2xpLmNvbS9pbmRleC5waHAvZm9yLXNoYXJpbmcv">https://www.wendongli.com/index.php/for-sharing/<i class="fa fa-external-link-alt"></i></span></p>
+</blockquote>
+<h3>
+<span style="color:#040273;">Latent change score model</span>
+</h3>
+<p><b>A Replication of <span class="exturl" data-url="aHR0cHM6Ly9kb2kub3JnLzEwLjExNzcvMTA5NDQyODEyMDk2Mzc4OA==">Matusik et al
+(2021)<i class="fa fa-external-link-alt"></i></span></b></p>
+<p>The results and Mplus code can be found in this repo:</p>
+<p><b>Mplus Code of  <span class="exturl" data-url="aHR0cHM6Ly9wc3ljbmV0LmFwYS5vcmcvZG9pLzEwLjEwMzcvYXBsMDAwMTA0Mg==">Steffen et al
+(2021)<i class="fa fa-external-link-alt"></i></span></b></p>
+<figure class="highlight plaintext"><figcaption><span>syntax</span></figcaption><table><tr><td class="code"><pre><span class="line">Mplus syntax for hypothesis 1 sensitivity analysis</span><br><span class="line"></span><br><span class="line">TITLE:	</span><br><span class="line">    Merger paper H1</span><br><span class="line"></span><br><span class="line">DATA: </span><br><span class="line">    FILE IS &#x27;g:/my drive/merger/latent.dat&#x27;;</span><br><span class="line"></span><br><span class="line">VARIABLE:	</span><br><span class="line">    NAMES ARE merge size js5 js7 abs5 abs7 ss5 ss7;</span><br><span class="line">    USEVARIABLES ARE merge size js5 js7;</span><br><span class="line">    </span><br><span class="line">MODEL: </span><br><span class="line">    !Latent True Scores</span><br><span class="line">    js1 BY js5@1;</span><br><span class="line">    js2 BY js7@1;</span><br><span class="line"></span><br><span class="line">    !Specifies the mean and variance of js1.</span><br><span class="line">    [js1]; js1;</span><br><span class="line">    !Fixes the mean and variance of js2 to 0.</span><br><span class="line">    [js2@0]; js2@0;</span><br><span class="line">    [js5-js7@0];</span><br><span class="line">    !Sets the residual variances of js5 and js7 to be equal and labels them as resvar.</span><br><span class="line">    js5-js7 (resvar);</span><br><span class="line"></span><br><span class="line">    !Autoregressions</span><br><span class="line">    js2 ON js1@1;</span><br><span class="line"></span><br><span class="line">    !Latent Change Factors</span><br><span class="line">    jsd BY js2@1;</span><br><span class="line">    !Fixes the mean and variance of jsd to 0.</span><br><span class="line">    [jsd@0];</span><br><span class="line">    jsd@0;</span><br><span class="line"></span><br><span class="line">    !Hypothesis</span><br><span class="line">    jsd ON merge size;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">OUTPUT:</span><br><span class="line">    STAND CINT;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>blog</category>
+      </categories>
+      <tags>
+        <tag>measurement invariance</tag>
+        <tag>latent change score model</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>How to test moderation in growth modeling</title>
+    <url>/posts/c622061/</url>
+    <content><![CDATA[<p>The outcome is repeatedly measured in the moderation.</p>
+<p>There are two papers explaining the methods behind:</p>
+<ol type="1">
+<li><p>Curran, P. J., Bauer, D. J., &amp; Willoughby, M. T. (2004).
+Testing main effects and interactions in latent curve analysis.
+Psychological Methods, 9(2), 220-237.</p></li>
+<li><p>Preacher, K. J., Curran, P. J., &amp; Bauer, D. J. (2006).
+Computational tools for probing interactions in multiple linear
+regression, multilevel modeling, and latent curve analysis. Journal of
+Educational and Behavioral Statistics, 31(4), 437-448.</p>
+<blockquote>
+<p>Note: online tools mentioned in this paper could be found at: <span class="exturl" data-url="aHR0cHM6Ly9ldXIwMy5zYWZlbGlua3MucHJvdGVjdGlvbi5vdXRsb29rLmNvbS8/dXJsPWh0dHAlM0ElMkYlMkZ3d3cucXVhbnRwc3kub3JnJTJGaW50ZXJhY3QlMkZpbmRleC5odG0mZGF0YT0wNSU3QzAyJTdDeS55YW5nQHJzbS5ubCU3QzZhNzRiMjE5MWNlYzRkYjY4NDBmMDhkY2JmY2I4MzljJTdDNzE1OTAyZDZmNjNlNGI4ZDkyOWI0YmIxNzBiYWQ0OTIlN0MwJTdDMCU3QzYzODU5NjEyODAzNjY4MDkwNiU3Q1Vua25vd24lN0NUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjAlM0QlN0MwJTdDJTdDJTdDJnNkYXRhPTVtM2RIRVJuSkEzMlh1JTJCSnREaDclMkJyR28wME9GS0loMEpBR3pENHNxdmhJJTNEJnJlc2VydmVkPTA=">http://www.quantpsy.org/interact/index.htm<i class="fa fa-external-link-alt"></i></span></p>
+</blockquote></li>
+</ol>
+<p>Though moderation was not a main focus in this classic paper, gender
+as a moderator appeared in the growth modeling.</p>
+<ol type="1">
+<li>Ployhart, R. E., &amp; Vandenberg, R. J. (2010). Longitudinal
+research: The theory, design, and analysis of change. <em>Journal of
+management</em>, <em>36</em>(1), 94-120.</li>
+</ol>
+<p><strong>Two example articles deployed moderation in latent growth
+modeling:</strong></p>
+<p><strong>AMJ:</strong> more details in Online Supplemental
+Materials:</p>
+<ul>
+<li>Deng, Y., Lin, W., Song, Y., Wang, M., Cai, D., &amp; Liu, J. (In
+press). Socialization as a political arena: A multi-agent interactionist
+perspective to understand political skill and newcomer socialization
+rates. <em>Academy of Management Journal</em>.</li>
+</ul>
+<p><strong>JAP</strong>: Multilevel moderation</p>
+<ul>
+<li>Miron-Spektor, E., Vashdi, D. R., &amp; Gopher, H. (2022). Bright
+sparks and enquiring minds: Differential effects of goal orientation on
+the creativity trajectory. <em>Journal of Applied Psychology</em>,
+<em>107</em>(2), 310-218.</li>
+</ul>
+]]></content>
+      <categories>
+        <category>blog</category>
+      </categories>
+      <tags>
+        <tag>growth modeling</tag>
+        <tag>moderation</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>How to batch edit title case into sentence case for multiple items in Zotero</title>
     <url>/posts/4e75520/</url>
     <content><![CDATA[<p>Zotero users might use APA 7<sup>th</sup> for their reference. There
@@ -33,31 +200,6 @@ doi, etc.) are right.</p>
         <tag>zotero</tag>
         <tag>javascript</tag>
         <tag>sentence case</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Welcome to my site!</title>
-    <url>/posts/4f1dc535/</url>
-    <content><![CDATA[<p>Hi there!</p>
-<p>Welcome to my website!!</p>
-<p>I created this little corner of the internet - to share all the
-<strong>handy tools</strong>, <strong>formulas</strong>, <strong>code
-snippets</strong>, and other useful resources I've collected. Feel free
-to explore everything using that "<strong>Search</strong>" button at the
-top. If you find anything unavailable or outdated, please email me at <a
-href="mailto:research@yongkangyang.com">research@yongkangyang.com</a> so
-I can keep things up-to-date.</p>
-<p>Thanks for stopping by, and happy life!</p>
-<div class="note primary"><h4 id="section">↓↓↓</h4>
-<p><span class="exturl" data-url="aHR0cDovL3d3dy55b25na2FuZ3lhbmcuY29tL2NhdGVnb3JpZXMvYmxvZy8=">Click this
-link and start to explore!<i class="fa fa-external-link-alt"></i></span></p>
-</div>
-]]></content>
-      <categories>
-        <category>blog</category>
-      </categories>
-      <tags>
-        <tag>support</tag>
       </tags>
   </entry>
   <entry>
@@ -146,64 +288,6 @@ filed, papers will reach out to you.</p>
       </tags>
   </entry>
   <entry>
-    <title>How to find scales?</title>
-    <url>/posts/98101af5/</url>
-    <content><![CDATA[<h3>
-<span style="color:#040273;">Scales</span>
-</h3>
-<p>There are scales available in the website. For example:</p>
-<ol type="1">
-<li><p><span class="exturl" data-url="aHR0cHM6Ly9zamRtLm9yZy9kbWlkaS9pbmRleC5odG1s">The Decision Making
-Individual Differences Inventory (DMIDI)<i class="fa fa-external-link-alt"></i></span> &gt;The DMIDI is a
-catalogue of over 200 individual difference measures commonly used in
-judgment and decision-making research. An alphabetical list of all of
-the over 170 measures covered by the DMIDI:
-https://sjdm.org/dmidi/All_Scales.html</p></li>
-<li><p><span class="exturl" data-url="aHR0cHM6Ly93d3cub2Jocm0ubmV0">OBHRM百科-A Chinese website<i class="fa fa-external-link-alt"></i></span>
-&gt;
-OBHRM百科是一个国内OBHRM学者共建共享的OBHRM公益知识库。我们坚信，通过所有同仁的共同努力，可以为国内OBHRM研究、教学创造更便利的条件。</p></li>
-</ol>
-<ul>
-<li><span class="exturl" data-url="aHR0cHM6Ly93d3cub2Jocm0ubmV0L2luZGV4LnBocC8lRTYlQTAlOEYlRTclOUIlQUU6JUU4JThCJUIxJUU2JTk2JTg3JUU5JTg3JThGJUU4JUExJUE4">For
-English Scales<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly93d3cub2Jocm0ubmV0L2luZGV4LnBocC8lRTYlQTAlOEYlRTclOUIlQUU6JUU0JUI4JUFEJUU2JTk2JTg3JUU5JTg3JThGJUU4JUExJUE4">For
-Chinese Scales<i class="fa fa-external-link-alt"></i></span></li>
-</ul>
-<ol start="3" type="1">
-<li><span class="exturl" data-url="aHR0cHM6Ly9kb2kub3JnLzEwLjIzMDcvMjY2Njk5OQ==">Edmondson (1999)<i class="fa fa-external-link-alt"></i></span> in
-Appendix
-<ul>
-<li>Supportiveness of organization context</li>
-<li>Task design</li>
-<li>Clear Direction</li>
-<li>Team composition</li>
-<li>Team efficacy</li>
-<li>Team psychological Safety</li>
-<li>Team Learning Coaching</li>
-<li>Team learning behavior</li>
-<li>Team performance</li>
-<li>Internal motivation</li>
-<li>Team learning behavior (observer)</li>
-<li>Team performance (obseerver)</li>
-</ul></li>
-<li>to be continued</li>
-</ol>
-<h3>
-<span style="color:#040273;">Google Scholar</span>
-</h3>
-<p>If you find one relevant scale but the paper only revealed on item or
-two. Then it's easy to use the keyword searching like: "scale name or
-author name" + "example item".</p>
-]]></content>
-      <categories>
-        <category>blog</category>
-      </categories>
-      <tags>
-        <tag>scales</tag>
-        <tag>measures</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Three ways ChatGPT helps me in my academic writing</title>
     <url>/posts/d4c8fa66/</url>
     <content><![CDATA[<p>Some useful prompts for academic writing from a recent article in
@@ -239,90 +323,6 @@ using my own expertise to refine what it produces. ——Dritjon Gruda</p>
       <tags>
         <tag>ChatGPT</tag>
         <tag>Academic writing</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Mplus Code for Measurement invariance and LCS model</title>
-    <url>/posts/b97fc5b4/</url>
-    <content><![CDATA[<div class="note info"><h4 id="info">Info</h4>
-<p><strong>Click this link to access the file</strong> <span class="exturl" data-url="aHR0cHM6Ly9vc2YuaW8vOTd5bjQv">OSF link<i class="fa fa-external-link-alt"></i></span></p>
-</div>
-<p><strong>Reference</strong>:</p>
-<p>Li, W.-D., Wang, J., Allen, T., Zhang, X., Yu, K., Zhang, H., Huang,
-J. L., Liu, M., &amp; Li, A. (2024). Getting under the skin? Influences
-of work–family experiences on personality trait adaptation and
-reciprocal relationships. <em>Journal of Personality and Social
-Psychology, 126</em>(4), 694–718. <span class="exturl" data-url="aHR0cHM6Ly9wc3ljbmV0LmFwYS5vcmcvZG9pLzEwLjEwMzcvcHNwcDAwMDA0NzY=">https://doi.org/10.1037/pspp0000476<i class="fa fa-external-link-alt"></i></span></p>
-<blockquote>
-<p>Strongly Recommend Prof. Wendong Li's Website for longitudinal
-research: <span class="exturl" data-url="aHR0cHM6Ly93d3cud2VuZG9uZ2xpLmNvbS9pbmRleC5waHAvZm9yLXNoYXJpbmcv">https://www.wendongli.com/index.php/for-sharing/<i class="fa fa-external-link-alt"></i></span></p>
-</blockquote>
-<h3>
-<span style="color:#040273;">Latent change score model</span>
-</h3>
-<p><b>A Replication of <span class="exturl" data-url="aHR0cHM6Ly9kb2kub3JnLzEwLjExNzcvMTA5NDQyODEyMDk2Mzc4OA==">Matusik et al
-(2021)<i class="fa fa-external-link-alt"></i></span></b></p>
-<p>The results and Mplus code can be found in this repo:</p>
-<p><b>Mplus Code of  <span class="exturl" data-url="aHR0cHM6Ly9wc3ljbmV0LmFwYS5vcmcvZG9pLzEwLjEwMzcvYXBsMDAwMTA0Mg==">Steffen et al
-(2021)<i class="fa fa-external-link-alt"></i></span></b></p>
-<figure class="highlight plaintext"><figcaption><span>syntax</span></figcaption><table><tr><td class="code"><pre><span class="line">Mplus syntax for hypothesis 1 sensitivity analysis</span><br><span class="line"></span><br><span class="line">TITLE:	</span><br><span class="line">    Merger paper H1</span><br><span class="line"></span><br><span class="line">DATA: </span><br><span class="line">    FILE IS &#x27;g:/my drive/merger/latent.dat&#x27;;</span><br><span class="line"></span><br><span class="line">VARIABLE:	</span><br><span class="line">    NAMES ARE merge size js5 js7 abs5 abs7 ss5 ss7;</span><br><span class="line">    USEVARIABLES ARE merge size js5 js7;</span><br><span class="line">    </span><br><span class="line">MODEL: </span><br><span class="line">    !Latent True Scores</span><br><span class="line">    js1 BY js5@1;</span><br><span class="line">    js2 BY js7@1;</span><br><span class="line"></span><br><span class="line">    !Specifies the mean and variance of js1.</span><br><span class="line">    [js1]; js1;</span><br><span class="line">    !Fixes the mean and variance of js2 to 0.</span><br><span class="line">    [js2@0]; js2@0;</span><br><span class="line">    [js5-js7@0];</span><br><span class="line">    !Sets the residual variances of js5 and js7 to be equal and labels them as resvar.</span><br><span class="line">    js5-js7 (resvar);</span><br><span class="line"></span><br><span class="line">    !Autoregressions</span><br><span class="line">    js2 ON js1@1;</span><br><span class="line"></span><br><span class="line">    !Latent Change Factors</span><br><span class="line">    jsd BY js2@1;</span><br><span class="line">    !Fixes the mean and variance of jsd to 0.</span><br><span class="line">    [jsd@0];</span><br><span class="line">    jsd@0;</span><br><span class="line"></span><br><span class="line">    !Hypothesis</span><br><span class="line">    jsd ON merge size;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">OUTPUT:</span><br><span class="line">    STAND CINT;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>blog</category>
-      </categories>
-      <tags>
-        <tag>measurement invariance</tag>
-        <tag>latent change score model</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>How to test moderation in growth modeling</title>
-    <url>/posts/c622061/</url>
-    <content><![CDATA[<p>The outcome is repeatedly measured in the moderation.</p>
-<p>There are two papers explaining the methods behind:</p>
-<ol type="1">
-<li><p>Curran, P. J., Bauer, D. J., &amp; Willoughby, M. T. (2004).
-Testing main effects and interactions in latent curve analysis.
-Psychological Methods, 9(2), 220-237.</p></li>
-<li><p>Preacher, K. J., Curran, P. J., &amp; Bauer, D. J. (2006).
-Computational tools for probing interactions in multiple linear
-regression, multilevel modeling, and latent curve analysis. Journal of
-Educational and Behavioral Statistics, 31(4), 437-448.</p>
-<blockquote>
-<p>Note: online tools mentioned in this paper could be found at: <span class="exturl" data-url="aHR0cHM6Ly9ldXIwMy5zYWZlbGlua3MucHJvdGVjdGlvbi5vdXRsb29rLmNvbS8/dXJsPWh0dHAlM0ElMkYlMkZ3d3cucXVhbnRwc3kub3JnJTJGaW50ZXJhY3QlMkZpbmRleC5odG0mZGF0YT0wNSU3QzAyJTdDeS55YW5nQHJzbS5ubCU3QzZhNzRiMjE5MWNlYzRkYjY4NDBmMDhkY2JmY2I4MzljJTdDNzE1OTAyZDZmNjNlNGI4ZDkyOWI0YmIxNzBiYWQ0OTIlN0MwJTdDMCU3QzYzODU5NjEyODAzNjY4MDkwNiU3Q1Vua25vd24lN0NUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjAlM0QlN0MwJTdDJTdDJTdDJnNkYXRhPTVtM2RIRVJuSkEzMlh1JTJCSnREaDclMkJyR28wME9GS0loMEpBR3pENHNxdmhJJTNEJnJlc2VydmVkPTA=">http://www.quantpsy.org/interact/index.htm<i class="fa fa-external-link-alt"></i></span></p>
-</blockquote></li>
-</ol>
-<p>Though moderation was not a main focus in this classic paper, gender
-as a moderator appeared in the growth modeling.</p>
-<ol type="1">
-<li>Ployhart, R. E., &amp; Vandenberg, R. J. (2010). Longitudinal
-research: The theory, design, and analysis of change. <em>Journal of
-management</em>, <em>36</em>(1), 94-120.</li>
-</ol>
-<p><strong>Two example articles deployed moderation in latent growth
-modeling:</strong></p>
-<p><strong>AMJ:</strong> more details in Online Supplemental
-Materials:</p>
-<ul>
-<li>Deng, Y., Lin, W., Song, Y., Wang, M., Cai, D., &amp; Liu, J. (In
-press). Socialization as a political arena: A multi-agent interactionist
-perspective to understand political skill and newcomer socialization
-rates. <em>Academy of Management Journal</em>.</li>
-</ul>
-<p><strong>JAP</strong>: Multilevel moderation</p>
-<ul>
-<li>Miron-Spektor, E., Vashdi, D. R., &amp; Gopher, H. (2022). Bright
-sparks and enquiring minds: Differential effects of goal orientation on
-the creativity trajectory. <em>Journal of Applied Psychology</em>,
-<em>107</em>(2), 310-218.</li>
-</ul>
-]]></content>
-      <categories>
-        <category>blog</category>
-      </categories>
-      <tags>
-        <tag>growth modeling</tag>
-        <tag>moderation</tag>
       </tags>
   </entry>
 </search>
