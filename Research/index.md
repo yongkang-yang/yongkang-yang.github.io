@@ -15,14 +15,15 @@ comments: false
 1. **Yang, Y**., van Knippenberg. D. Nederveen Pieterse, A., Li, J. Title hidden for peer-review. _**Journal of Applied Psychology**_ (_1st Round R&R_).
 2. **Yang, Y**., Duan, M. Yuan, S., Xing, L. Title hidden for peer-review. _**Journal of Managerial Psychology**_ (_under review_).
 
-<h3><span style="color:#040273;">Working In Progress:</span></h3>
-
+{% note info no-icon <h3><span style="color:#040273;">Working In Progress:</span></h3> %}
+<h3><span style="color:#040273;">Working In Progress:</span></h3> 
 1. **Yang, Y.**, van Knippenberg, D., Li, J., Nederveen Pieterse, A. Dynamic team functional diversity/Team membership change and team processes: A field study. Stage: Data Analyzing.
 2. **Yang, Y.**, van Knippenberg, D., Nederveen Pieterse, A., Li, J. Differentiated information elaboration over time. Stage: Data Analyzing.
 3. **Yang, Y.**, van Knippenberg, D., Nederveen Pieterse, A., Li, J.  Membership change in role differentiated teams. Stage: Data collection.
 4. Li, D., Tu, Y., **Yang, Y.**, Bai, Y. Awe in the workplace. Stage: Conceptualization.
 5. Zhang, Y., Tu, Y., **Yang, Y.**. Temporal focus and ethical leadership. Stage: Conceptualization.
 6. Yuan, S., Shao, Y., Xing, L., **Yang, Y**. Interdisciplinarity in Management Research. Stage: Conceptualization
+{% endnote %}
 
 <h3><span style="color:#040273;">Conference Presentation:</span></h3>
 
