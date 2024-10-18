@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 7.3.0">
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,400italic,700,700italic%7CRoboto+Mono:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha256-XOqroi11tY4EFQMR9ZYwZWKj5ZXiftSx36RRuC3anlA=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.31/fancybox/fancybox.css" integrity="sha256-gkQVf8UKZgQ0HyuxL/VnacadJ+D2Kox2TCEBuNQg5+w=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"yongkangyang.com","root":"/","images":"/images","scheme":"Mist","darkmode":true,"version":"8.20.0","exturl":true,"hljswrap":true,"copycode":{"enable":false,"style":"mac"},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+    <meta name="description" content="Zotero users might use APA 7th for their reference. There is a problem when the metadata in Zotero is title case, it is laborious to change it every time to sentence case. I found a java script that c">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to batch edit title case into sentence case for multiple items in Zotero">
+<meta property="og:url" content="http://yongkangyang.com/posts/4e75520/index.html">
+<meta property="og:site_name" content="YONGKANG YANG">
+<meta property="og:description" content="Zotero users might use APA 7th for their reference. There is a problem when the metadata in Zotero is title case, it is laborious to change it every time to sentence case. I found a java script that c">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-06-13T13:45:50.000Z">
+<meta property="article:modified_time" content="2024-10-17T15:24:43.450Z">
+<meta property="article:author" content="Yongkang Yang">
+<meta property="article:tag" content="zotero">
+<meta property="article:tag" content="javascript">
+<meta property="article:tag" content="sentence case">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://yongkangyang.com/posts/4e75520/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://yongkangyang.com/posts/4e75520/","path":"posts/4e75520/","title":"How to batch edit title case into sentence case for multiple items in Zotero"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>How to batch edit title case into sentence case for multiple items in Zotero | YONGKANG YANG</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">YONGKANG YANG</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">PhD Candidate at RSM</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-house fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/About/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-research"><a href="/Research/" rel="section"><i class="fa fa-flask fa-fw"></i>Research</a></li><li class="menu-item menu-item-teaching"><a href="/Teaching/" rel="section"><i class="fa fa-chalkboard fa-fw"></i>Teaching</a></li><li class="menu-item menu-item-contact"><a href="/Contact/" rel="section"><i class="fa fa-address-book fa-fw"></i>Contact</a></li><li class="menu-item menu-item-blog"><a href="/posts/4f1dc535/" rel="section"><i class="fa fa-book fa-fw"></i>Blog</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="Searching..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Yongkang Yang</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://yongkangyang.com/posts/4e75520/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Yongkang Yang">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="YONGKANG YANG">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="How to batch edit title case into sentence case for multiple items in Zotero | YONGKANG YANG">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          How to batch edit title case into sentence case for multiple items in Zotero
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2024-06-13 15:45:50" itemprop="dateCreated datePublished" datetime="2024-06-13T15:45:50+02:00">2024-06-13</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2024-10-17 17:24:43" itemprop="dateModified" datetime="2024-10-17T17:24:43+02:00">2024-10-17</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/blog/" itemprop="url" rel="index"><span itemprop="name">blog</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>Zotero users might use APA 7<sup>th</sup> for their reference. There is a problem when the metadata in Zotero is title case, it is laborious to change it every time to sentence case. I found a java script that can take care of all items at once.</p>
+<p><strong>Usage:</strong> </p>
+<ol>
+<li>copy the code below</li>
+<li>Zotero-Tools-Developer-Run JavaScript</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">zoteroPane = <span class="title class_">Zotero</span>.<span class="title function_">getActiveZoteroPane</span>();</span><br><span class="line">items = zoteroPane.<span class="title function_">getSelectedItems</span>();</span><br><span class="line"><span class="keyword">var</span> result = <span class="string">&quot;&quot;</span>;</span><br><span class="line"><span class="keyword">for</span> (item <span class="keyword">of</span> items) &#123;</span><br><span class="line"><span class="keyword">var</span> title = item.<span class="title function_">getField</span>(<span class="string">&#x27;title&#x27;</span>);</span><br><span class="line">result += <span class="string">&quot; &quot;</span> + title + <span class="string">&quot;\n&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> new_title = title.<span class="title function_">replace</span>(<span class="regexp">/\b([A-Z][a-z0-9]+|A)\b/g</span>, <span class="keyword">function</span> (<span class="params">x</span>) &#123; <span class="keyword">return</span> x.<span class="title function_">toLowerCase</span>(); &#125;);</span><br><span class="line">new_title = new_title.<span class="title function_">replace</span>(<span class="regexp">/(^|\?\s*)[a-z]/</span>, <span class="keyword">function</span> (<span class="params">x</span>) &#123; <span class="keyword">return</span> x.<span class="title function_">toUpperCase</span>(); &#125;);</span><br><span class="line">result += <span class="string">&quot;-&gt; &quot;</span> + new_title + <span class="string">&quot;\n\n&quot;</span>;</span><br><span class="line"><span class="comment">// // Do it at your own risk</span></span><br><span class="line"> item.<span class="title function_">setField</span>(<span class="string">&#x27;title&#x27;</span>, new_title);</span><br><span class="line"> <span class="keyword">await</span> item.<span class="title function_">saveTx</span>();</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">return</span> result;</span><br></pre></td></tr></table></figure>
+
+<p><span style="color:#FF0000;">The only issue is that it can’t uppercase the first letter after the “:”</span> there is still minimum work to be done, but I am not an expert in Java so if you find a better way, just let me know. </p>
+<p><strong>If you want all title case, you can try another script below:</strong> </p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> items = <span class="title class_">ZoteroPane</span>.<span class="title function_">getSelectedItems</span>();</span><br><span class="line"><span class="keyword">var</span> n = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">for</span> (item <span class="keyword">of</span> items) &#123;</span><br><span class="line">            <span class="keyword">var</span> title = item.<span class="title function_">getField</span>(<span class="string">&#x27;title&#x27;</span>);</span><br><span class="line">            new_title = <span class="title function_">titleCase</span>(title). <span class="comment">// convert to title case</span></span><br><span class="line">                            <span class="title function_">replace</span>(<span class="string">&#x27;And&#x27;</span>, <span class="string">&#x27;and&#x27;</span>). <span class="comment">// replace &#x27;And&#x27;</span></span><br><span class="line">                            <span class="title function_">replace</span>(<span class="string">&#x27;For&#x27;</span>, <span class="string">&#x27;for&#x27;</span>). <span class="comment">// replace &#x27;For&#x27;</span></span><br><span class="line">                            <span class="title function_">replace</span>(<span class="string">&#x27;In&#x27;</span>, <span class="string">&#x27;in&#x27;</span>). <span class="comment">// replace &#x27;In&#x27;</span></span><br><span class="line">                            <span class="title function_">replace</span>(<span class="string">&#x27;Of&#x27;</span>, <span class="string">&#x27;of&#x27;</span>). <span class="comment">// replace &#x27;Of&#x27;</span></span><br><span class="line">                            <span class="title function_">replace</span>(<span class="string">&#x27;With&#x27;</span>, <span class="string">&#x27;with&#x27;</span>).</span><br><span class="line">                            <span class="title function_">replace</span>(<span class="string">&#x27;Usa&#x27;</span>, <span class="string">&#x27;USA&#x27;</span>).</span><br><span class="line">                            <span class="title function_">replace</span>(<span class="string">&#x27;Dna&#x27;</span>, <span class="string">&#x27;DNA&#x27;</span>).</span><br><span class="line">                            <span class="title function_">replace</span>(<span class="string">&#x27;Pcr&#x27;</span>, <span class="string">&#x27;PCR&#x27;</span>).</span><br><span class="line">                            <span class="title function_">replace</span>(<span class="string">&#x27;Ros&#x27;</span>, <span class="string">&#x27;ROS&#x27;</span>).</span><br><span class="line">                            <span class="title function_">replace</span>(<span class="string">&#x27;To&#x27;</span>, <span class="string">&#x27;to&#x27;</span>)</span><br><span class="line">                            </span><br><span class="line">                            </span><br><span class="line">                            </span><br><span class="line">            item.<span class="title function_">setField</span>(<span class="string">&#x27;title&#x27;</span>, new_title);</span><br><span class="line">            <span class="keyword">await</span> item.<span class="title function_">saveTx</span>();</span><br><span class="line">            n ++</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">return</span> n + <span class="string">&#x27;个条目的题目大小写转为词首字母大写，有些特殊缩写单词可能转换错误，请查实。&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 将单词转为首字母大写</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">titleCase</span>(<span class="params">str</span>) &#123;   </span><br><span class="line">     <span class="keyword">var</span> newStr = str.<span class="title function_">split</span>(<span class="string">&quot; &quot;</span>);    </span><br><span class="line">     <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; newStr.<span class="property">length</span>; i++) &#123;</span><br><span class="line">        newStr[i] = newStr[i].<span class="title function_">slice</span>(<span class="number">0</span>,<span class="number">1</span>).<span class="title function_">toUpperCase</span>() + newStr[i].<span class="title function_">slice</span>(<span class="number">1</span>).<span class="title function_">toLowerCase</span>();</span><br><span class="line">        &#125;      </span><br><span class="line">     <span class="keyword">return</span> newStr.<span class="title function_">join</span>(<span class="string">&quot; &quot;</span>);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Note: </p>
+<p>Before run the script, make sure the metadata (year, author name, doi, etc.) are right. </p>
+<p><strong>Reference:</strong></p>
+<p>Find other useful scripts in Zotero, click: <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3JlZGxlYWZuZXcvem90ZXJvLWphdmFzY3JpcHRz">zotero-javascripts<i class="fa fa-external-link-alt"></i></span></p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/zotero/" rel="tag"># zotero</a>
+              <a href="/tags/javascript/" rel="tag"># javascript</a>
+              <a href="/tags/sentence-case/" rel="tag"># sentence case</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/posts/2bab4f46/" rel="prev" title="How to keep track of the latest journal articles">
+                  <i class="fa fa-angle-left"></i> How to keep track of the latest journal articles
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/posts/b97fc5b4/" rel="next" title="Mplus Code for Measurement invariance and LCS model">
+                  Mplus Code for Measurement invariance and LCS model <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments utterances-container"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fa fa-pencil"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">by Yongkang Yang</span>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.31/fancybox/fancybox.umd.js" integrity="sha256-a+H7FYzJv6oU2hfsfDGM2Ohw/cR9v+hPfxHCLdmCrE8=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+  <script class="next-config" data-name="pdf" type="application/json">{"object_url":{"url":"https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.3.0/pdfobject.min.js","integrity":"sha256-JJZNsid68vnh3/zyj0lY9BN5ynxVX/12XgOa1TlaYN0="},"url":"/lib/pdf/web/viewer.html"}</script>
+  <script src="/js/third-party/tags/pdf.js"></script>
+
+  <script class="next-config" data-name="mermaid" type="application/json">{"enable":true,"theme":{"light":"default","dark":"dark"},"js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.9.0/mermaid.min.js","integrity":"sha256-stuqcu2FrjYCXDOytWFA5SoUE/r3nkp6gTglzNSlavU="}}</script>
+  <script src="/js/third-party/tags/mermaid.js"></script>
+
+
+  <script src="/js/third-party/fancybox.js"></script>
+
+
+
+  
+
+
+
+
+<script class="next-config" data-name="utterances" type="application/json">{"enable":"ture","repo":"yongkang-yang/yongkang-yang.github.io","issue_term":"pathname","theme":"github-light"}</script>
+<script src="/js/third-party/comments/utterances.js"></script>
+
+</body>
+</html>

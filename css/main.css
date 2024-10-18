@@ -846,6 +846,11 @@ pre code {
 .post-body .note.danger h6 {
   color: #d9534f;
 }
+.pdfobject-container iframe,
+.pdfobject-container embed {
+  height: 500px;
+  width: 100%;
+}
 .post-body .tabs {
   margin-bottom: 20px;
 }
@@ -1231,7 +1236,7 @@ pre code {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #ff58ff;
+  background: #7a0952;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2551,13 +2556,6 @@ mark.search-keyword {
   border-bottom: 1px dashed #ff2a2a;
   color: #ff2a2a;
   font-weight: bold;
-}
-mjx-container[jax='CHTML'][display='true'],
-.has-jax {
-  overflow: auto hidden;
-}
-mjx-container[display='true'] + br {
-  display: none;
 }
 .use-motion .animated {
   animation-fill-mode: none;

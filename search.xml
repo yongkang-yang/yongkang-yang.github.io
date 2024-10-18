@@ -1,3 +1,237 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
+  <entry>
+    <title>How to batch edit title case into sentence case for multiple items in Zotero</title>
+    <url>/posts/4e75520/</url>
+    <content><![CDATA[<p>Zotero users might use APA 7<sup>th</sup> for their reference. There is a problem when the metadata in Zotero is title case, it is laborious to change it every time to sentence case. I found a java script that can take care of all items at once.</p>
+<p><strong>Usage:</strong> </p>
+<ol>
+<li>copy the code below</li>
+<li>Zotero-Tools-Developer-Run JavaScript</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">zoteroPane = <span class="title class_">Zotero</span>.<span class="title function_">getActiveZoteroPane</span>();</span><br><span class="line">items = zoteroPane.<span class="title function_">getSelectedItems</span>();</span><br><span class="line"><span class="keyword">var</span> result = <span class="string">&quot;&quot;</span>;</span><br><span class="line"><span class="keyword">for</span> (item <span class="keyword">of</span> items) &#123;</span><br><span class="line"><span class="keyword">var</span> title = item.<span class="title function_">getField</span>(<span class="string">&#x27;title&#x27;</span>);</span><br><span class="line">result += <span class="string">&quot; &quot;</span> + title + <span class="string">&quot;\n&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> new_title = title.<span class="title function_">replace</span>(<span class="regexp">/\b([A-Z][a-z0-9]+|A)\b/g</span>, <span class="keyword">function</span> (<span class="params">x</span>) &#123; <span class="keyword">return</span> x.<span class="title function_">toLowerCase</span>(); &#125;);</span><br><span class="line">new_title = new_title.<span class="title function_">replace</span>(<span class="regexp">/(^|\?\s*)[a-z]/</span>, <span class="keyword">function</span> (<span class="params">x</span>) &#123; <span class="keyword">return</span> x.<span class="title function_">toUpperCase</span>(); &#125;);</span><br><span class="line">result += <span class="string">&quot;-&gt; &quot;</span> + new_title + <span class="string">&quot;\n\n&quot;</span>;</span><br><span class="line"><span class="comment">// // Do it at your own risk</span></span><br><span class="line"> item.<span class="title function_">setField</span>(<span class="string">&#x27;title&#x27;</span>, new_title);</span><br><span class="line"> <span class="keyword">await</span> item.<span class="title function_">saveTx</span>();</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">return</span> result;</span><br></pre></td></tr></table></figure>
+
+<p><span style="color:#FF0000;">The only issue is that it can’t uppercase the first letter after the “:”</span> there is still minimum work to be done, but I am not an expert in Java so if you find a better way, just let me know. </p>
+<p><strong>If you want all title case, you can try another script below:</strong> </p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> items = <span class="title class_">ZoteroPane</span>.<span class="title function_">getSelectedItems</span>();</span><br><span class="line"><span class="keyword">var</span> n = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">for</span> (item <span class="keyword">of</span> items) &#123;</span><br><span class="line">            <span class="keyword">var</span> title = item.<span class="title function_">getField</span>(<span class="string">&#x27;title&#x27;</span>);</span><br><span class="line">            new_title = <span class="title function_">titleCase</span>(title). <span class="comment">// convert to title case</span></span><br><span class="line">                            <span class="title function_">replace</span>(<span class="string">&#x27;And&#x27;</span>, <span class="string">&#x27;and&#x27;</span>). <span class="comment">// replace &#x27;And&#x27;</span></span><br><span class="line">                            <span class="title function_">replace</span>(<span class="string">&#x27;For&#x27;</span>, <span class="string">&#x27;for&#x27;</span>). <span class="comment">// replace &#x27;For&#x27;</span></span><br><span class="line">                            <span class="title function_">replace</span>(<span class="string">&#x27;In&#x27;</span>, <span class="string">&#x27;in&#x27;</span>). <span class="comment">// replace &#x27;In&#x27;</span></span><br><span class="line">                            <span class="title function_">replace</span>(<span class="string">&#x27;Of&#x27;</span>, <span class="string">&#x27;of&#x27;</span>). <span class="comment">// replace &#x27;Of&#x27;</span></span><br><span class="line">                            <span class="title function_">replace</span>(<span class="string">&#x27;With&#x27;</span>, <span class="string">&#x27;with&#x27;</span>).</span><br><span class="line">                            <span class="title function_">replace</span>(<span class="string">&#x27;Usa&#x27;</span>, <span class="string">&#x27;USA&#x27;</span>).</span><br><span class="line">                            <span class="title function_">replace</span>(<span class="string">&#x27;Dna&#x27;</span>, <span class="string">&#x27;DNA&#x27;</span>).</span><br><span class="line">                            <span class="title function_">replace</span>(<span class="string">&#x27;Pcr&#x27;</span>, <span class="string">&#x27;PCR&#x27;</span>).</span><br><span class="line">                            <span class="title function_">replace</span>(<span class="string">&#x27;Ros&#x27;</span>, <span class="string">&#x27;ROS&#x27;</span>).</span><br><span class="line">                            <span class="title function_">replace</span>(<span class="string">&#x27;To&#x27;</span>, <span class="string">&#x27;to&#x27;</span>)</span><br><span class="line">                            </span><br><span class="line">                            </span><br><span class="line">                            </span><br><span class="line">            item.<span class="title function_">setField</span>(<span class="string">&#x27;title&#x27;</span>, new_title);</span><br><span class="line">            <span class="keyword">await</span> item.<span class="title function_">saveTx</span>();</span><br><span class="line">            n ++</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">return</span> n + <span class="string">&#x27;个条目的题目大小写转为词首字母大写，有些特殊缩写单词可能转换错误，请查实。&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 将单词转为首字母大写</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">titleCase</span>(<span class="params">str</span>) &#123;   </span><br><span class="line">     <span class="keyword">var</span> newStr = str.<span class="title function_">split</span>(<span class="string">&quot; &quot;</span>);    </span><br><span class="line">     <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; newStr.<span class="property">length</span>; i++) &#123;</span><br><span class="line">        newStr[i] = newStr[i].<span class="title function_">slice</span>(<span class="number">0</span>,<span class="number">1</span>).<span class="title function_">toUpperCase</span>() + newStr[i].<span class="title function_">slice</span>(<span class="number">1</span>).<span class="title function_">toLowerCase</span>();</span><br><span class="line">        &#125;      </span><br><span class="line">     <span class="keyword">return</span> newStr.<span class="title function_">join</span>(<span class="string">&quot; &quot;</span>);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>Note: </p>
+<p>Before run the script, make sure the metadata (year, author name, doi, etc.) are right. </p>
+<p><strong>Reference:</strong></p>
+<p>Find other useful scripts in Zotero, click: <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3JlZGxlYWZuZXcvem90ZXJvLWphdmFzY3JpcHRz">zotero-javascripts<i class="fa fa-external-link-alt"></i></span></p>
+]]></content>
+      <categories>
+        <category>blog</category>
+      </categories>
+      <tags>
+        <tag>zotero</tag>
+        <tag>javascript</tag>
+        <tag>sentence case</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>How to find scales?</title>
+    <url>/posts/98101af5/</url>
+    <content><![CDATA[<h3><span style="color:#040273;">Scales</span></h3>
+There are scales available in the website. For example:    
+
+<ol>
+<li><p><span class="exturl" data-url="aHR0cHM6Ly9zamRtLm9yZy9kbWlkaS9pbmRleC5odG1s">The Decision Making Individual Differences Inventory (DMIDI)<i class="fa fa-external-link-alt"></i></span> </p>
+<blockquote>
+<p>The DMIDI is a catalogue of over 200 individual difference measures commonly used in judgment and decision-making research. An alphabetical list of all of the over 170 measures covered by the DMIDI: <span class="exturl" data-url="aHR0cHM6Ly9zamRtLm9yZy9kbWlkaS9BbGxfU2NhbGVzLmh0bWw=">https://sjdm.org/dmidi/All_Scales.html<i class="fa fa-external-link-alt"></i></span></p>
+</blockquote>
+</li>
+<li><p><span class="exturl" data-url="aHR0cHM6Ly93d3cub2Jocm0ubmV0Lw==">OBHRM百科-A Chinese website<i class="fa fa-external-link-alt"></i></span></p>
+<blockquote>
+<p>OBHRM百科是一个国内OBHRM学者共建共享的OBHRM公益知识库。我们坚信，通过所有同仁的共同努力，可以为国内OBHRM研究、教学创造更便利的条件。</p>
+</blockquote>
+</li>
+</ol>
+<ul>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cub2Jocm0ubmV0L2luZGV4LnBocC8lRTYlQTAlOEYlRTclOUIlQUU6JUU4JThCJUIxJUU2JTk2JTg3JUU5JTg3JThGJUU4JUExJUE4">For English Scales<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly93d3cub2Jocm0ubmV0L2luZGV4LnBocC8lRTYlQTAlOEYlRTclOUIlQUU6JUU0JUI4JUFEJUU2JTk2JTg3JUU5JTg3JThGJUU4JUExJUE4">For Chinese Scales<i class="fa fa-external-link-alt"></i></span></li>
+</ul>
+<ol start="3">
+<li><p><span class="exturl" data-url="aHR0cHM6Ly9kb2kub3JnLzEwLjIzMDcvMjY2Njk5OQ==">Edmondson (1999)<i class="fa fa-external-link-alt"></i></span> in Appendix</p>
+<ul>
+<li>Supportiveness of organization context</li>
+<li>Task design</li>
+<li>Clear Direction</li>
+<li>Team composition</li>
+<li>Team efficacy</li>
+<li>Team psychological Safety</li>
+<li>Team Learning Coaching</li>
+<li>Team learning behavior</li>
+<li>Team performance</li>
+<li>Internal motivation</li>
+<li>Team learning behavior (observer)</li>
+<li>Team performance (obseerver)</li>
+</ul>
+</li>
+<li><p>to be continued</p>
+</li>
+</ol>
+<h3><span style="color:#040273;">Google Scholar</span></h3>
+If you find one relevant scale but the paper only revealed on item or two. Then it's easy to use the keyword searching like: "scale name or author name" + "example item".
+
+]]></content>
+      <categories>
+        <category>blog</category>
+      </categories>
+      <tags>
+        <tag>scales</tag>
+        <tag>measures</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Welcome to my site!</title>
+    <url>/posts/4f1dc535/</url>
+    <content><![CDATA[<p>Hi there!</p>
+<p>Welcome to my website!!  </p>
+<p>I created this little corner of the internet - to share all the <strong>handy tools</strong>, <strong>formulas</strong>, <strong>code snippets</strong>, and other useful resources I’ve collected. Feel free to explore everything using that “<strong>Search</strong>“ button at the top. If you find anything unavailable or outdated, please email me at <a href="mailto:research@yongkangyang.com">research@yongkangyang.com</a> so I can keep things up-to-date.</p>
+<p>Thanks for stopping by, and happy life!</p>
+<div class="note primary"><h4 id="8595-8595-8595"><a href="#8595-8595-8595" class="headerlink" title="&#8595;&#8595;&#8595;"></a>&#8595;&#8595;&#8595;</h4><p><span class="exturl" data-url="aHR0cDovL3d3dy55b25na2FuZ3lhbmcuY29tL2NhdGVnb3JpZXMvYmxvZy8=">Click this link and start to explore!<i class="fa fa-external-link-alt"></i></span></p>
+</div>]]></content>
+      <categories>
+        <category>blog</category>
+      </categories>
+      <tags>
+        <tag>support</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>How to test moderation in growth modeling</title>
+    <url>/posts/c622061/</url>
+    <content><![CDATA[<p>The outcome is repeatedly measured in the moderation. </p>
+<p>There are two papers explaining the methods behind:</p>
+<ol>
+<li><p>Curran, P. J., Bauer, D. J., &amp; Willoughby, M. T. (2004). Testing main effects and interactions in latent curve analysis. Psychological Methods, 9(2), 220-237.</p>
+</li>
+<li><p>Preacher, K. J., Curran, P. J., &amp; Bauer, D. J. (2006). Computational tools for probing interactions in multiple linear regression, multilevel modeling, and latent curve analysis. Journal of Educational and Behavioral Statistics, 31(4), 437-448.</p>
+<blockquote>
+<p>Note: online tools mentioned in this paper could be found at: <span class="exturl" data-url="aHR0cHM6Ly9ldXIwMy5zYWZlbGlua3MucHJvdGVjdGlvbi5vdXRsb29rLmNvbS8/dXJsPWh0dHA6Ly93d3cucXVhbnRwc3kub3JnL2ludGVyYWN0L2luZGV4Lmh0bSZkYXRhPTA1JTdDMDIlN0N5LnlhbmdAcnNtLm5sJTdDNmE3NGIyMTkxY2VjNGRiNjg0MGYwOGRjYmZjYjgzOWMlN0M3MTU5MDJkNmY2M2U0YjhkOTI5YjRiYjE3MGJhZDQ5MiU3QzAlN0MwJTdDNjM4NTk2MTI4MDM2NjgwOTA2JTdDVW5rbm93biU3Q1RXRnBiR1pzYjNkOGV5SldJam9pTUM0d0xqQXdNREFpTENKUUlqb2lWMmx1TXpJaUxDSkJUaUk2SWsxaGFXd2lMQ0pYVkNJNk1uMD0lN0MwJTdDJTdDJTdDJnNkYXRhPTVtM2RIRVJuSkEzMlh1K0p0RGg3K3JHbzAwT0ZLSWgwSkFHekQ0c3F2aEk9JnJlc2VydmVkPTA=">http://www.quantpsy.org/interact/index.htm<i class="fa fa-external-link-alt"></i></span></p>
+</blockquote>
+</li>
+</ol>
+<p>Though moderation was not a main focus in this classic paper, gender as a moderator appeared in the growth modeling. </p>
+<ol>
+<li>Ployhart, R. E., &amp; Vandenberg, R. J. (2010). Longitudinal research: The theory, design, and analysis of change. <em>Journal of management</em>, <em>36</em>(1), 94-120.</li>
+</ol>
+<p><strong>Two example articles deployed moderation in latent growth modeling:</strong></p>
+<p><strong>AMJ:</strong> more details in Online Supplemental Materials:</p>
+<ul>
+<li>Deng, Y., Lin, W., Song, Y., Wang, M., Cai, D., &amp; Liu, J. (In press). Socialization as a political arena: A multi-agent interactionist perspective to understand political skill and newcomer socialization rates. <em>Academy of Management Journal</em>.</li>
+</ul>
+<p><strong>JAP</strong>: Multilevel moderation</p>
+<ul>
+<li>Miron-Spektor, E., Vashdi, D. R., &amp; Gopher, H. (2022). Bright sparks and enquiring minds: Differential effects of goal orientation on the creativity trajectory. <em>Journal of Applied Psychology</em>, <em>107</em>(2), 310-218.</li>
+</ul>
+]]></content>
+      <categories>
+        <category>blog</category>
+      </categories>
+      <tags>
+        <tag>growth modeling</tag>
+        <tag>moderation</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>How to keep track of the latest journal articles</title>
+    <url>/posts/2bab4f46/</url>
+    <content><![CDATA[<p>Probably just me, every once a while, I feel myself anxious being left behind about the latest literature in my field. So, for a long time, I’ve been trying to find a perfect way to keep track of the latest journal articles. I found my final answer, but tried different methods along the way, and you may find other solutions fit you better. I hereby recommend three main approaches for your consideration.</p>
+<h3><span style="color:#040273;">Email Alert</span></h3>
+
+<p>All the journals can be found in publication companies like, Willey, Springer, Sage,  Elsevier, etc. For example, in Elsevier, you can find OB related journals: <em><span class="exturl" data-url="aHR0cHM6Ly93d3cuc2NpZW5jZWRpcmVjdC5jb20vam91cm5hbC9qb3VybmFsLW9mLWJ1c2luZXNzLXJlc2VhcmNo">Journal of Business Research<i class="fa fa-external-link-alt"></i></span></em>, <em><span class="exturl" data-url="aHR0cHM6Ly93d3cuc2NpZW5jZWRpcmVjdC5jb20vam91cm5hbC9qb3VybmFsLW9mLWJ1c2luZXNzLXZlbnR1cmluZw==">Journal of Business Venturing<i class="fa fa-external-link-alt"></i></span></em>, <em><span class="exturl" data-url="aHR0cHM6Ly93d3cuc2NpZW5jZWRpcmVjdC5jb20vam91cm5hbC9qb3VybmFsLW9mLXZvY2F0aW9uYWwtYmVoYXZpb3I=">Journal of Vocational Behavior<i class="fa fa-external-link-alt"></i></span></em>, <em><span class="exturl" data-url="aHR0cHM6Ly93d3cuc2NpZW5jZWRpcmVjdC5jb20vam91cm5hbC9vcmdhbml6YXRpb25hbC1iZWhhdmlvci1hbmQtaHVtYW4tZGVjaXNpb24tcHJvY2Vzc2Vz">Organizational Behavior and Human Decision Processes<i class="fa fa-external-link-alt"></i></span></em>. By signing up the Elsevier, you are able to follow all these journal by email alert (see a screenshot below). </p>
+<p><img src="https://s2.loli.net/2024/06/16/HFA4nTBCzYa1QRJ.png" alt="Manage my publication.png"></p>
+<p>It’s the same for Willy, Sage and other publishers only if you know which journal is in which publisher.</p>
+<h3><span style="color:#040273;">RSS subscription</span></h3>
+
+<p>The email alert is a perfect way but for people who are less likely to put everything in the mailbox, it would be overwhelming whenever you open the mailbox and find hundreds of unread journal articles. Although these emails can be put in a separate folder and do not disturb your mail inbox, the pressure is still hanging there. Another solution is therefore to find a place to put this articles independently. RSS offers the perfect solution in this regard. <span class="exturl" data-url="aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvUlNT">RSS<i class="fa fa-external-link-alt"></i></span> is a web feed that allows users and applications to access updates to websites in a standardized, computer-readable format. RSS readers like <span class="exturl" data-url="aHR0cHM6Ly9mZWVkbHkuY29tLw==">Feedly<i class="fa fa-external-link-alt"></i></span>, <span class="exturl" data-url="aHR0cHM6Ly93d3cuaW5vcmVhZGVyLmNvbS8=">Inoreader<i class="fa fa-external-link-alt"></i></span>, or other embedded RSS service in outlook or Zotero can recognize RSS feeds and generate reading interface.   </p>
+<p>I recommend Zotero because you can easily include articles into your collection and then cite the paper when you need. The interface looks like blow:  </p>
+<p><img src="https://s2.loli.net/2024/06/18/dDrm2eXJQP1SEhx.png" alt="RSS feeds"></p>
+<p>When you click one journal, for example, <em>Academy of management Annals</em>, you are able to read the article by clicking the paper, and Zotero will redirect you to the original page, if you find this paper interesting, you can also “add to your library”.</p>
+<p><img src="https://s2.loli.net/2024/06/18/5yYuiAlQvRXnpjg.png" alt="Academy of Management Annals"></p>
+<h3><span style="color:#040273;">Browzine</span></h3>
+
+<p>Okay, the final solution, at least to me. I don’t like RSS as it does not strictly follow the chronical order. Currently, I am using the <a href="browzine.com">Browzine</a>, a magazine-like reading experience (see a screenshot below).  You will need University authorization to use. Please contact your library if you are unsure about it.</p>
+<p><img src="https://s2.loli.net/2024/06/18/DhXGiBpyJ2CkMQw.png" alt="My Bookshelf"></p>
+<p>In the end, <strong>it’s more important to read the paper than finding ways to follow the paper</strong>. If you are active in the filed, papers will reach out to you. </p>
+]]></content>
+      <categories>
+        <category>blog</category>
+      </categories>
+      <tags>
+        <tag>rss</tag>
+        <tag>email alert</tag>
+        <tag>browzine</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Mplus Code for Measurement invariance and LCS model</title>
+    <url>/posts/b97fc5b4/</url>
+    <content><![CDATA[<div class="note info"><h4 id="Info"><a href="#Info" class="headerlink" title="Info"></a>Info</h4><p><strong>Click this link to access the file</strong>  <span class="exturl" data-url="aHR0cHM6Ly9vc2YuaW8vOTd5bjQv">OSF link<i class="fa fa-external-link-alt"></i></span></p>
+</div>
+
+<p><strong>Reference</strong>:</p>
+<p>Li, W.-D., Wang, J., Allen, T.,  Zhang, X., Yu, K., Zhang, H., Huang, J. L., Liu, M., &amp; Li, A.  (2024). Getting under the skin? Influences of work–family experiences on personality trait adaptation and reciprocal relationships. <em>Journal of Personality and Social Psychology, 126</em>(4), 694–718. <span class="exturl" data-url="aHR0cHM6Ly9wc3ljbmV0LmFwYS5vcmcvZG9pLzEwLjEwMzcvcHNwcDAwMDA0NzY=">https://doi.org/10.1037/pspp0000476<i class="fa fa-external-link-alt"></i></span></p>
+<blockquote>
+<p>Strongly Recommend Prof. Wendong Li’s Website for longitudinal research: <span class="exturl" data-url="aHR0cHM6Ly93d3cud2VuZG9uZ2xpLmNvbS9pbmRleC5waHAvZm9yLXNoYXJpbmcv">https://www.wendongli.com/index.php/for-sharing/ <i class="fa fa-external-link-alt"></i></span> </p>
+</blockquote>
+<h3><span style="color:#040273;">Latent change score model</span></h3>
+
+<p><b>A Replication of <span class="exturl" data-url="aHR0cHM6Ly9kb2kub3JnLzEwLjExNzcvMTA5NDQyODEyMDk2Mzc4OA==">Matusik et al (2021)<i class="fa fa-external-link-alt"></i></span></b> </p>
+<p>The results and Mplus code can be found in this repo:</p>
+<p><b>Mplus Code of  <span class="exturl" data-url="aHR0cHM6Ly9wc3ljbmV0LmFwYS5vcmcvZG9pLzEwLjEwMzcvYXBsMDAwMTA0Mg==">Steffen et al (2021)<i class="fa fa-external-link-alt"></i></span></b> </p>
+<figure class="highlight plaintext"><figcaption><span>syntax</span></figcaption><table><tr><td class="code"><pre><span class="line">Mplus syntax for hypothesis 1 sensitivity analysis</span><br><span class="line"></span><br><span class="line">TITLE:	</span><br><span class="line">    Merger paper H1</span><br><span class="line"></span><br><span class="line">DATA: </span><br><span class="line">    FILE IS &#x27;g:/my drive/merger/latent.dat&#x27;;</span><br><span class="line"></span><br><span class="line">VARIABLE:	</span><br><span class="line">    NAMES ARE merge size js5 js7 abs5 abs7 ss5 ss7;</span><br><span class="line">    USEVARIABLES ARE merge size js5 js7;</span><br><span class="line">    </span><br><span class="line">MODEL: </span><br><span class="line">    !Latent True Scores</span><br><span class="line">    js1 BY js5@1;</span><br><span class="line">    js2 BY js7@1;</span><br><span class="line"></span><br><span class="line">    !Specifies the mean and variance of js1.</span><br><span class="line">    [js1]; js1;</span><br><span class="line">    !Fixes the mean and variance of js2 to 0.</span><br><span class="line">    [js2@0]; js2@0;</span><br><span class="line">    [js5-js7@0];</span><br><span class="line">    !Sets the residual variances of js5 and js7 to be equal and labels them as resvar.</span><br><span class="line">    js5-js7 (resvar);</span><br><span class="line"></span><br><span class="line">    !Autoregressions</span><br><span class="line">    js2 ON js1@1;</span><br><span class="line"></span><br><span class="line">    !Latent Change Factors</span><br><span class="line">    jsd BY js2@1;</span><br><span class="line">    !Fixes the mean and variance of jsd to 0.</span><br><span class="line">    [jsd@0];</span><br><span class="line">    jsd@0;</span><br><span class="line"></span><br><span class="line">    !Hypothesis</span><br><span class="line">    jsd ON merge size;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">OUTPUT:</span><br><span class="line">    STAND CINT;</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>blog</category>
+      </categories>
+      <tags>
+        <tag>measurement invariance</tag>
+        <tag>latent change score model</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Three ways ChatGPT helps me in my academic writing</title>
+    <url>/posts/d4c8fa66/</url>
+    <content><![CDATA[<p>Some useful prompts for academic writing from a recent article in Nature Career Column.</p>
+<blockquote>
+<p>The value that I derive from generative AI is not from the technology  itself blindly churning out text, but from engaging with the tool and  using my own expertise to refine what it produces. ——Dritjon Gruda</p>
+<div class="text-center"><span class="exturl" data-url="aHR0cHM6Ly93d3cubmF0dXJlLmNvbS9hcnRpY2xlcy9kNDE1ODYtMDI0LTAxMDQyLTM=">Nature<i class="fa fa-external-link-alt"></i></span></div>
+</blockquote>
+<h3><span style="color:#040273;">Polishing academic writing</span></h3>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">I’m writing a paper on [topic] for a leading [discipline] academic journal. What I tried to say in the following section is [specific point]. Please rephrase it for clarity, coherence and conciseness, ensuring each paragraph flows into the next. Remove jargon. Use a professional tone.</span><br></pre></td></tr></table></figure>
+
+<p>if it’s not what you want or you want to improve its output:</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">This isn’t quite what I meant. Let’s adjust this part.</span><br></pre></td></tr></table></figure>
+
+<p>or</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">This is much clearer, but let’s tweak the ending for a stronger transition to the next section.</span><br></pre></td></tr></table></figure>
+
+
+
+<h3><span style="color:#040273;">Elevating peer review</span></h3>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Assume you’re an expert and seasoned scholar with 20+ years of academic experience in [field]. On the basis of my summary of a paper in [field], where the main focus is on [general topic], provide a detailed review of this paper, in the following order: 1) briefly discuss its core content; 2) identify its limitations; and 3) explain the significance of each limitation in order of importance. Maintain a concise and professional tone throughout.</span><br></pre></td></tr></table></figure>
+
+
+
+<h3><span style="color:#040273;">Optimizing editorial feedback</span></h3>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">On the basis of these notes, draft a letter to the author. Highlight the manuscript’s key issues and clearly explain why the manuscript, despite its interesting topic, might not provide a substantial enough advancement to merit publication. Avoid jargon. Be direct. Maintain a professional and respectful tone throughout.</span><br></pre></td></tr></table></figure>
+
+
+
+]]></content>
+      <categories>
+        <category>blog</category>
+      </categories>
+      <tags>
+        <tag>ChatGPT</tag>
+        <tag>Academic writing</tag>
+      </tags>
+  </entry>
 </search>
