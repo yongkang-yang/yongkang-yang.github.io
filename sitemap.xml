@@ -4,6 +4,15 @@
   <url>
     <loc>http://yongkangyang.com/Research/index.html</loc>
     
+    <lastmod>2024-10-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yongkangyang.com/posts/98101af5/</loc>
+    
     <lastmod>2024-10-18</lastmod>
     
     <changefreq>monthly</changefreq>
@@ -83,15 +92,6 @@
   </url>
   
   <url>
-    <loc>http://yongkangyang.com/posts/98101af5/</loc>
-    
-    <lastmod>2024-10-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://yongkangyang.com/posts/4e75520/</loc>
     
     <lastmod>2024-10-17</lastmod>
@@ -121,113 +121,113 @@
 
   <url>
     <loc>http://yongkangyang.com/</loc>
-    <lastmod>2024-10-18</lastmod>
+    <lastmod>2024-10-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
+    <loc>http://yongkangyang.com/tags/support/</loc>
+    <lastmod>2024-10-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://yongkangyang.com/tags/zotero/</loc>
-    <lastmod>2024-10-18</lastmod>
+    <lastmod>2024-10-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://yongkangyang.com/tags/javascript/</loc>
-    <lastmod>2024-10-18</lastmod>
+    <lastmod>2024-10-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://yongkangyang.com/tags/sentence-case/</loc>
-    <lastmod>2024-10-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://yongkangyang.com/tags/support/</loc>
-    <lastmod>2024-10-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://yongkangyang.com/tags/scales/</loc>
-    <lastmod>2024-10-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://yongkangyang.com/tags/measures/</loc>
-    <lastmod>2024-10-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://yongkangyang.com/tags/growth-modeling/</loc>
-    <lastmod>2024-10-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://yongkangyang.com/tags/moderation/</loc>
-    <lastmod>2024-10-18</lastmod>
+    <lastmod>2024-10-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://yongkangyang.com/tags/rss/</loc>
-    <lastmod>2024-10-18</lastmod>
+    <lastmod>2024-10-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://yongkangyang.com/tags/email-alert/</loc>
-    <lastmod>2024-10-18</lastmod>
+    <lastmod>2024-10-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://yongkangyang.com/tags/browzine/</loc>
-    <lastmod>2024-10-18</lastmod>
+    <lastmod>2024-10-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://yongkangyang.com/tags/scales/</loc>
+    <lastmod>2024-10-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://yongkangyang.com/tags/measures/</loc>
+    <lastmod>2024-10-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://yongkangyang.com/tags/growth-modeling/</loc>
+    <lastmod>2024-10-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://yongkangyang.com/tags/moderation/</loc>
+    <lastmod>2024-10-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://yongkangyang.com/tags/measurement-invariance/</loc>
-    <lastmod>2024-10-18</lastmod>
+    <lastmod>2024-10-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://yongkangyang.com/tags/latent-change-score-model/</loc>
-    <lastmod>2024-10-18</lastmod>
+    <lastmod>2024-10-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://yongkangyang.com/tags/ChatGPT/</loc>
-    <lastmod>2024-10-18</lastmod>
+    <lastmod>2024-10-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://yongkangyang.com/tags/Academic-writing/</loc>
-    <lastmod>2024-10-18</lastmod>
+    <lastmod>2024-10-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -236,7 +236,7 @@
   
   <url>
     <loc>http://yongkangyang.com/categories/blog/</loc>
-    <lastmod>2024-10-18</lastmod>
+    <lastmod>2024-10-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
