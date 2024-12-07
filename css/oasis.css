@@ -5,7 +5,7 @@ body {
   align-items: center /* For horizontal alignment */;
   padding-top: 5em;
   padding-bottom: 8em;
-  font-family: Inter var, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-family: Lato var, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   color: #1a202c;
 }
 div#content {
@@ -127,7 +127,7 @@ aside li {
   text-align: left;
 }
 #post table tbody tr:nth-of-type(even) {
-  background-color: #f3f3f3;
+  background-color: #fff;
 }
 #post table tbody tr:last-of-type {
   border-bottom: 1px solid #f3f3f3;
@@ -192,7 +192,7 @@ aside li {
   color: #394867;
 }
 #post p code {
-  background: #f3f3f3;
+  background: #fff;
   padding: 0.2em 0.2em;
 }
 #post pre[class*='language-'].line-numbers {
