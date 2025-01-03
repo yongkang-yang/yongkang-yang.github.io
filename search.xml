@@ -136,80 +136,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Mplus Code for Measurement invariance and LCS model</title>
-    <url>/posts/b97fc5b4/</url>
-    <content><![CDATA[<h4 id="Info"><a href="#Info" class="headerlink" title="Info"></a>Info</h4><p><strong>Click this link to access the file</strong>  <a href="https://osf.io/97yn4/">OSF link</a></p>
-<p><strong>Reference</strong>:</p>
-<p>Li, W.-D., Wang, J., Allen, T.,  Zhang, X., Yu, K., Zhang, H., Huang, J. L., Liu, M., &amp; Li, A.  (2024). Getting under the skin? Influences of work–family experiences on personality trait adaptation and reciprocal relationships. <em>Journal of Personality and Social Psychology, 126</em>(4), 694–718. <a href="https://psycnet.apa.org/doi/10.1037/pspp0000476">https://doi.org/10.1037/pspp0000476</a></p>
-<span id="more"></span> 
-
-<blockquote>
-<p>Strongly Recommend Prof. Wendong Li’s Website for longitudinal research: <a href="https://www.wendongli.com/index.php/for-sharing/">https://www.wendongli.com/index.php/for-sharing/ </a> </p>
-</blockquote>
-<h3><span style="color:#040273;">Latent change score model</span></h3>
-
-<p><b>A Replication of <a href="https://doi.org/10.1177/1094428120963788">Matusik et al (2021)</a></b> </p>
-<p>The results and Mplus code can be found in this repo:</p>
-<p><b>Mplus Code of  <a href="https://psycnet.apa.org/doi/10.1037/apl0001042">Steffen et al (2021)</a></b> </p>
-<figure class="highlight plaintext"><figcaption><span>syntax</span></figcaption><table><tr><td class="code"><pre><span class="line">Mplus syntax for hypothesis 1 sensitivity analysis</span><br><span class="line"></span><br><span class="line">TITLE:	</span><br><span class="line">    Merger paper H1</span><br><span class="line"></span><br><span class="line">DATA: </span><br><span class="line">    FILE IS &#x27;g:/my drive/merger/latent.dat&#x27;;</span><br><span class="line"></span><br><span class="line">VARIABLE:	</span><br><span class="line">    NAMES ARE merge size js5 js7 abs5 abs7 ss5 ss7;</span><br><span class="line">    USEVARIABLES ARE merge size js5 js7;</span><br><span class="line">    </span><br><span class="line">MODEL: </span><br><span class="line">    !Latent True Scores</span><br><span class="line">    js1 BY js5@1;</span><br><span class="line">    js2 BY js7@1;</span><br><span class="line"></span><br><span class="line">    !Specifies the mean and variance of js1.</span><br><span class="line">    [js1]; js1;</span><br><span class="line">    !Fixes the mean and variance of js2 to 0.</span><br><span class="line">    [js2@0]; js2@0;</span><br><span class="line">    [js5-js7@0];</span><br><span class="line">    !Sets the residual variances of js5 and js7 to be equal and labels them as resvar.</span><br><span class="line">    js5-js7 (resvar);</span><br><span class="line"></span><br><span class="line">    !Autoregressions</span><br><span class="line">    js2 ON js1@1;</span><br><span class="line"></span><br><span class="line">    !Latent Change Factors</span><br><span class="line">    jsd BY js2@1;</span><br><span class="line">    !Fixes the mean and variance of jsd to 0.</span><br><span class="line">    [jsd@0];</span><br><span class="line">    jsd@0;</span><br><span class="line"></span><br><span class="line">    !Hypothesis</span><br><span class="line">    jsd ON merge size;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">OUTPUT:</span><br><span class="line">    STAND CINT;</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>Research Method</category>
-      </categories>
-      <tags>
-        <tag>measurement invariance</tag>
-        <tag>latent change score model</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>RSS Feed</title>
-    <url>/posts/89f1b92c/</url>
-    <content><![CDATA[<p>This site is available on RSS feed. Add this link: <a href="https://www.yongkang-yang.github.io/atom.xml">https://www.yongkang-yang.github.io/atom.xml</a> to you RSS reader to follow the latest updates.</p>
-<!-- This message is used to verify that this feed (feedId:84313441177364480) belongs to me (userId:82875362231734272). Join me in enjoying the next generation information browser https://follow.is. -->
-
-]]></content>
-      <categories>
-        <category>Blog</category>
-      </categories>
-      <tags>
-        <tag>RSS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>How to keep track of the latest journal articles</title>
-    <url>/posts/2bab4f46/</url>
-    <content><![CDATA[<p>Probably just me, every once a while, I feel myself anxious being left behind about the latest literature in my field. So, for a long time, I’ve been trying to find a perfect way to keep track of the latest journal articles. I found my final answer, but tried different methods along the way, and you may find other solutions fit you better. I hereby recommend three main approaches for your consideration.</p>
-<span id="more"></span> 
-
-<h3><span style="color:#040273;">Email Alert</span></h3>
-
-<p>All the journals can be found in publication companies like, Willey, Springer, Sage,  Elsevier, etc. For example, in Elsevier, you can find OB related journals: <em><a href="https://www.sciencedirect.com/journal/journal-of-business-research">Journal of Business Research</a></em>, <em><a href="https://www.sciencedirect.com/journal/journal-of-business-venturing">Journal of Business Venturing</a></em>, <em><a href="https://www.sciencedirect.com/journal/journal-of-vocational-behavior">Journal of Vocational Behavior</a></em>, <em><a href="https://www.sciencedirect.com/journal/organizational-behavior-and-human-decision-processes">Organizational Behavior and Human Decision Processes</a></em>. By signing up the Elsevier, you are able to follow all these journal by email alert (see a screenshot below). </p>
-<p><img src="https://s2.loli.net/2024/06/16/HFA4nTBCzYa1QRJ.png" alt="Manage my publication.png"></p>
-<p>It’s the same for Willy, Sage and other publishers only if you know which journal is in which publisher.</p>
-<h3><span style="color:#040273;">RSS subscription</span></h3>
-
-<p>The email alert is a perfect way but for people who are less likely to put everything in the mailbox, it would be overwhelming whenever you open the mailbox and find hundreds of unread journal articles. Although these emails can be put in a separate folder and do not disturb your mail inbox, the pressure is still hanging there. Another solution is therefore to find a place to put this articles independently. RSS offers the perfect solution in this regard. <a href="https://en.wikipedia.org/wiki/RSS">RSS</a> is a web feed that allows users and applications to access updates to websites in a standardized, computer-readable format. RSS readers like <a href="https://feedly.com/">Feedly</a>, <a href="https://www.inoreader.com/">Inoreader</a>, or other embedded RSS service in outlook or Zotero can recognize RSS feeds and generate reading interface.   </p>
-<p>I recommend Zotero because you can easily include articles into your collection and then cite the paper when you need. The interface looks like blow:  </p>
-<p><img src="https://s2.loli.net/2024/06/18/dDrm2eXJQP1SEhx.png" alt="RSS feeds"></p>
-<p>When you click one journal, for example, <em>Academy of management Annals</em>, you are able to read the article by clicking the paper, and Zotero will redirect you to the original page, if you find this paper interesting, you can also “add to your library”.</p>
-<p><img src="https://s2.loli.net/2024/06/18/5yYuiAlQvRXnpjg.png" alt="Academy of Management Annals"></p>
-<h3><span style="color:#040273;">Browzine</span></h3>
-
-<p>Okay, the final solution, at least to me. I don’t like RSS as it does not strictly follow the chronical order. Currently, I am using the <a href="browzine.com">Browzine</a>, a magazine-like reading experience (see a screenshot below).  You will need University authorization to use. Please contact your library if you are unsure about it.</p>
-<p><img src="https://s2.loli.net/2024/06/18/DhXGiBpyJ2CkMQw.png" alt="My Bookshelf"></p>
-<p>In the end, <strong>it’s more important to read the paper than finding ways to follow the paper</strong>. If you are active in the filed, papers will reach out to you. </p>
-]]></content>
-      <categories>
-        <category>Tips</category>
-      </categories>
-      <tags>
-        <tag>rss</tag>
-        <tag>email alert</tag>
-        <tag>browzine</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>How to find scales?</title>
     <url>/posts/98101af5/</url>
     <content><![CDATA[<h3><span style="color:#040273;">Scales</span></h3>
@@ -265,36 +191,36 @@ If you find one relevant scale but the paper only revealed on item or two. Then 
       </tags>
   </entry>
   <entry>
-    <title>Top Plugins for Enhancing Your Zotero Workflow</title>
-    <url>/posts/3d8f8e4e/</url>
-    <content><![CDATA[<p>If you’re a Zotero user, you likely already know how powerful this reference manager can be for organizing and managing research. However, did you know that with the right plugins, you can supercharge its functionality?</p>
-<p>I’ve explored numerous Zotero plugins and found a handful that significantly improve workflow and efficiency. These plugins are compatible with Zotero 7 and add exciting features ranging from better citation handling to enhanced attachment management. Below, I’ve detailed each plugin to help you decide which ones might suit your needs. <a href="https://github.com/l0o0/jasminum">Jasminum</a>, <a href="https://github.com/retorquere/zotero-better-bibtex">Zotero-better-bibtex</a>, <a href="https://github.com/MuiseDestiny/zotero-style">Ethereal</a>, <a href="https://github.com/bwiernik/zotero-shortdoi">Zotero-shortdoi</a>, <a href="https://github.com/MuiseDestiny/zotero-attanger">Zotero-attanger</a>, <a href="https://github.com/syt2/zotero-addons">Zotero-addons</a>, <a href="https://github.com/redleafnew/zotero-updateifsE">Green Frog</a>, <a href="https://github.com/syt2/zotero-scipdf">Zotero-scipdf</a>.</p>
+    <title>How to keep track of the latest journal articles</title>
+    <url>/posts/2bab4f46/</url>
+    <content><![CDATA[<p>Probably just me, every once a while, I feel myself anxious being left behind about the latest literature in my field. So, for a long time, I’ve been trying to find a perfect way to keep track of the latest journal articles. I found my final answer, but tried different methods along the way, and you may find other solutions fit you better. I hereby recommend three main approaches for your consideration.</p>
 <span id="more"></span> 
 
-<h2 id="Zotero-addons"><a href="#Zotero-addons" class="headerlink" title="Zotero-addons"></a>Zotero-addons</h2><p>Zotero-addons is like the “Google Play Store” for Zotero 7. It allows you to easily discover, install, and manage plugins directly from a central market list. Even better, it supports automatic updates, ensuring that your favorite plugins are always up to date.</p>
-<h2 id="Zotero-better-bibtex"><a href="#Zotero-better-bibtex" class="headerlink" title="Zotero-better-bibtex"></a>Zotero-better-bibtex</h2><p>Better BibTeX is a must-have for anyone working extensively with LaTeX or writing academic papers. It streamlines citation management, offering advanced export options, citation key generation, and real-time syncing of BibTeX or BibLaTeX libraries.</p>
-<h2 id="Zotero-attanger"><a href="#Zotero-attanger" class="headerlink" title="Zotero-attanger"></a>Zotero-attanger</h2><p>This is an essential tool for managing your attachments in Zotero 7. Zotero-attanger is effectively the successor to Zotfile for Zotero 6, letting you organize, rename, and relocate attachments with ease.</p>
-<h2 id="Jasminum"><a href="#Jasminum" class="headerlink" title="Jasminum"></a>Jasminum</h2><p>Jasminum can recognize metadata from Chinese journals. For users who cite these papers and want to keep a good record of these papers. </p>
-<h2 id="Ethereal"><a href="#Ethereal" class="headerlink" title="Ethereal"></a>Ethereal</h2><p>Ethereal is a stylish plugin that refines Zotero’s appearance and functionality. Perfect for those who value both form and function, this plugin ensures your reference manager is visually appealing without compromising on performance.</p>
-<p>An example of my zotero below: the right side of the tags are made from Ethereal.</p>
-<p><img src="https://s2.loli.net/2024/12/06/d5uiAHKU6Tlspgc.png" alt="{1D98C070-C3BE-4BB8-AA53-59BCEA0800C8}"></p>
-<h2 id="Zotero-shortdoi"><a href="#Zotero-shortdoi" class="headerlink" title="Zotero-shortdoi"></a>Zotero-shortdoi</h2><p>Sharing DOIs can be cumbersome due to their length. Zotero-shortdoi generates shorter and more manageable DOI links directly within Zotero, making it easier to share references with collaborators or in documents.</p>
-<h2 id="Green-Frog"><a href="#Green-Frog" class="headerlink" title="Green Frog"></a>Green Frog</h2><p>Green Frog keeps your library accurate by updating the Impact Factors (IFs) and the journal information of journal entries (year, journal name, title, author, etc.) from easyScholar (need to log in easyScholar) in your Zotero database. The embeded function in Zotero often fails to update the Publication year. </p>
-<h2 id="Zotero-scipdf"><a href="#Zotero-scipdf" class="headerlink" title="Zotero-scipdf"></a>Zotero-scipdf</h2><p>Download PDF from Scihub. It supports batch download as well.</p>
+<h3><span style="color:#040273;">Email Alert</span></h3>
+
+<p>All the journals can be found in publication companies like, Willey, Springer, Sage,  Elsevier, etc. For example, in Elsevier, you can find OB related journals: <em><a href="https://www.sciencedirect.com/journal/journal-of-business-research">Journal of Business Research</a></em>, <em><a href="https://www.sciencedirect.com/journal/journal-of-business-venturing">Journal of Business Venturing</a></em>, <em><a href="https://www.sciencedirect.com/journal/journal-of-vocational-behavior">Journal of Vocational Behavior</a></em>, <em><a href="https://www.sciencedirect.com/journal/organizational-behavior-and-human-decision-processes">Organizational Behavior and Human Decision Processes</a></em>. By signing up the Elsevier, you are able to follow all these journal by email alert (see a screenshot below). </p>
+<p><img src="https://s2.loli.net/2024/06/16/HFA4nTBCzYa1QRJ.png" alt="Manage my publication.png"></p>
+<p>It’s the same for Willy, Sage and other publishers only if you know which journal is in which publisher.</p>
+<h3><span style="color:#040273;">RSS subscription</span></h3>
+
+<p>The email alert is a perfect way but for people who are less likely to put everything in the mailbox, it would be overwhelming whenever you open the mailbox and find hundreds of unread journal articles. Although these emails can be put in a separate folder and do not disturb your mail inbox, the pressure is still hanging there. Another solution is therefore to find a place to put this articles independently. RSS offers the perfect solution in this regard. <a href="https://en.wikipedia.org/wiki/RSS">RSS</a> is a web feed that allows users and applications to access updates to websites in a standardized, computer-readable format. RSS readers like <a href="https://feedly.com/">Feedly</a>, <a href="https://www.inoreader.com/">Inoreader</a>, or other embedded RSS service in outlook or Zotero can recognize RSS feeds and generate reading interface.   </p>
+<p>I recommend Zotero because you can easily include articles into your collection and then cite the paper when you need. The interface looks like blow:  </p>
+<p><img src="https://s2.loli.net/2024/06/18/dDrm2eXJQP1SEhx.png" alt="RSS feeds"></p>
+<p>When you click one journal, for example, <em>Academy of management Annals</em>, you are able to read the article by clicking the paper, and Zotero will redirect you to the original page, if you find this paper interesting, you can also “add to your library”.</p>
+<p><img src="https://s2.loli.net/2024/06/18/5yYuiAlQvRXnpjg.png" alt="Academy of Management Annals"></p>
+<h3><span style="color:#040273;">Browzine</span></h3>
+
+<p>Okay, the final solution, at least to me. I don’t like RSS as it does not strictly follow the chronical order. Currently, I am using the <a href="browzine.com">Browzine</a>, a magazine-like reading experience (see a screenshot below).  You will need University authorization to use. Please contact your library if you are unsure about it.</p>
+<p><img src="https://s2.loli.net/2024/06/18/DhXGiBpyJ2CkMQw.png" alt="My Bookshelf"></p>
+<p>In the end, <strong>it’s more important to read the paper than finding ways to follow the paper</strong>. If you are active in the filed, papers will reach out to you. </p>
 ]]></content>
       <categories>
-        <category>Software</category>
+        <category>Tips</category>
       </categories>
       <tags>
-        <tag>Zotero 7 Plugins</tag>
-        <tag>Jaminum</tag>
-        <tag>Zotero-better-bibtex</tag>
-        <tag>Ethereal</tag>
-        <tag>Zotero-shortdoi</tag>
-        <tag>Zotero-attanger</tag>
-        <tag>Zotero-addons</tag>
-        <tag>Green Frog</tag>
-        <tag>Zotero-scipdf</tag>
+        <tag>rss</tag>
+        <tag>email alert</tag>
+        <tag>browzine</tag>
       </tags>
   </entry>
   <entry>
@@ -333,6 +259,80 @@ If you find one relevant scale but the paper only revealed on item or two. Then 
       <tags>
         <tag>growth modeling</tag>
         <tag>moderation</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Mplus Code for Measurement invariance and LCS model</title>
+    <url>/posts/b97fc5b4/</url>
+    <content><![CDATA[<h4 id="Info"><a href="#Info" class="headerlink" title="Info"></a>Info</h4><p><strong>Click this link to access the file</strong>  <a href="https://osf.io/97yn4/">OSF link</a></p>
+<p><strong>Reference</strong>:</p>
+<p>Li, W.-D., Wang, J., Allen, T.,  Zhang, X., Yu, K., Zhang, H., Huang, J. L., Liu, M., &amp; Li, A.  (2024). Getting under the skin? Influences of work–family experiences on personality trait adaptation and reciprocal relationships. <em>Journal of Personality and Social Psychology, 126</em>(4), 694–718. <a href="https://psycnet.apa.org/doi/10.1037/pspp0000476">https://doi.org/10.1037/pspp0000476</a></p>
+<span id="more"></span> 
+
+<blockquote>
+<p>Strongly Recommend Prof. Wendong Li’s Website for longitudinal research: <a href="https://www.wendongli.com/index.php/for-sharing/">https://www.wendongli.com/index.php/for-sharing/ </a> </p>
+</blockquote>
+<h3><span style="color:#040273;">Latent change score model</span></h3>
+
+<p><b>A Replication of <a href="https://doi.org/10.1177/1094428120963788">Matusik et al (2021)</a></b> </p>
+<p>The results and Mplus code can be found in this repo:</p>
+<p><b>Mplus Code of  <a href="https://psycnet.apa.org/doi/10.1037/apl0001042">Steffen et al (2021)</a></b> </p>
+<figure class="highlight plaintext"><figcaption><span>syntax</span></figcaption><table><tr><td class="code"><pre><span class="line">Mplus syntax for hypothesis 1 sensitivity analysis</span><br><span class="line"></span><br><span class="line">TITLE:	</span><br><span class="line">    Merger paper H1</span><br><span class="line"></span><br><span class="line">DATA: </span><br><span class="line">    FILE IS &#x27;g:/my drive/merger/latent.dat&#x27;;</span><br><span class="line"></span><br><span class="line">VARIABLE:	</span><br><span class="line">    NAMES ARE merge size js5 js7 abs5 abs7 ss5 ss7;</span><br><span class="line">    USEVARIABLES ARE merge size js5 js7;</span><br><span class="line">    </span><br><span class="line">MODEL: </span><br><span class="line">    !Latent True Scores</span><br><span class="line">    js1 BY js5@1;</span><br><span class="line">    js2 BY js7@1;</span><br><span class="line"></span><br><span class="line">    !Specifies the mean and variance of js1.</span><br><span class="line">    [js1]; js1;</span><br><span class="line">    !Fixes the mean and variance of js2 to 0.</span><br><span class="line">    [js2@0]; js2@0;</span><br><span class="line">    [js5-js7@0];</span><br><span class="line">    !Sets the residual variances of js5 and js7 to be equal and labels them as resvar.</span><br><span class="line">    js5-js7 (resvar);</span><br><span class="line"></span><br><span class="line">    !Autoregressions</span><br><span class="line">    js2 ON js1@1;</span><br><span class="line"></span><br><span class="line">    !Latent Change Factors</span><br><span class="line">    jsd BY js2@1;</span><br><span class="line">    !Fixes the mean and variance of jsd to 0.</span><br><span class="line">    [jsd@0];</span><br><span class="line">    jsd@0;</span><br><span class="line"></span><br><span class="line">    !Hypothesis</span><br><span class="line">    jsd ON merge size;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">OUTPUT:</span><br><span class="line">    STAND CINT;</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>Research Method</category>
+      </categories>
+      <tags>
+        <tag>measurement invariance</tag>
+        <tag>latent change score model</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>RSS Feed</title>
+    <url>/posts/89f1b92c/</url>
+    <content><![CDATA[<p>This site is available on RSS feed. Add this link: <a href="https://www.yongkang-yang.github.io/atom.xml">https://www.yongkang-yang.github.io/atom.xml</a> to you RSS reader to follow the latest updates.</p>
+<!-- This message is used to verify that this feed (feedId:84313441177364480) belongs to me (userId:82875362231734272). Join me in enjoying the next generation information browser https://follow.is. -->
+
+]]></content>
+      <categories>
+        <category>Blog</category>
+      </categories>
+      <tags>
+        <tag>RSS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Top Plugins for Enhancing Your Zotero Workflow</title>
+    <url>/posts/3d8f8e4e/</url>
+    <content><![CDATA[<p>If you’re a Zotero user, you likely already know how powerful this reference manager can be for organizing and managing research. However, did you know that with the right plugins, you can supercharge its functionality?</p>
+<p>I’ve explored numerous Zotero plugins and found a handful that significantly improve workflow and efficiency. These plugins are compatible with Zotero 7 and add exciting features ranging from better citation handling to enhanced attachment management. Below, I’ve detailed each plugin to help you decide which ones might suit your needs. <a href="https://github.com/l0o0/jasminum">Jasminum</a>, <a href="https://github.com/retorquere/zotero-better-bibtex">Zotero-better-bibtex</a>, <a href="https://github.com/MuiseDestiny/zotero-style">Ethereal</a>, <a href="https://github.com/bwiernik/zotero-shortdoi">Zotero-shortdoi</a>, <a href="https://github.com/MuiseDestiny/zotero-attanger">Zotero-attanger</a>, <a href="https://github.com/syt2/zotero-addons">Zotero-addons</a>, <a href="https://github.com/redleafnew/zotero-updateifsE">Green Frog</a>, <a href="https://github.com/syt2/zotero-scipdf">Zotero-scipdf</a>.</p>
+<span id="more"></span> 
+
+<h2 id="Zotero-addons"><a href="#Zotero-addons" class="headerlink" title="Zotero-addons"></a>Zotero-addons</h2><p>Zotero-addons is like the “Google Play Store” for Zotero 7. It allows you to easily discover, install, and manage plugins directly from a central market list. Even better, it supports automatic updates, ensuring that your favorite plugins are always up to date.</p>
+<h2 id="Zotero-better-bibtex"><a href="#Zotero-better-bibtex" class="headerlink" title="Zotero-better-bibtex"></a>Zotero-better-bibtex</h2><p>Better BibTeX is a must-have for anyone working extensively with LaTeX or writing academic papers. It streamlines citation management, offering advanced export options, citation key generation, and real-time syncing of BibTeX or BibLaTeX libraries.</p>
+<h2 id="Zotero-attanger"><a href="#Zotero-attanger" class="headerlink" title="Zotero-attanger"></a>Zotero-attanger</h2><p>This is an essential tool for managing your attachments in Zotero 7. Zotero-attanger is effectively the successor to Zotfile for Zotero 6, letting you organize, rename, and relocate attachments with ease.</p>
+<h2 id="Jasminum"><a href="#Jasminum" class="headerlink" title="Jasminum"></a>Jasminum</h2><p>Jasminum can recognize metadata from Chinese journals. For users who cite these papers and want to keep a good record of these papers. </p>
+<h2 id="Ethereal"><a href="#Ethereal" class="headerlink" title="Ethereal"></a>Ethereal</h2><p>Ethereal is a stylish plugin that refines Zotero’s appearance and functionality. Perfect for those who value both form and function, this plugin ensures your reference manager is visually appealing without compromising on performance.</p>
+<p>An example of my zotero below: the right side of the tags are made from Ethereal.</p>
+<p><img src="https://s2.loli.net/2024/12/06/d5uiAHKU6Tlspgc.png" alt="{1D98C070-C3BE-4BB8-AA53-59BCEA0800C8}"></p>
+<h2 id="Zotero-shortdoi"><a href="#Zotero-shortdoi" class="headerlink" title="Zotero-shortdoi"></a>Zotero-shortdoi</h2><p>Sharing DOIs can be cumbersome due to their length. Zotero-shortdoi generates shorter and more manageable DOI links directly within Zotero, making it easier to share references with collaborators or in documents.</p>
+<h2 id="Green-Frog"><a href="#Green-Frog" class="headerlink" title="Green Frog"></a>Green Frog</h2><p>Green Frog keeps your library accurate by updating the Impact Factors (IFs) and the journal information of journal entries (year, journal name, title, author, etc.) from easyScholar (need to log in easyScholar) in your Zotero database. The embeded function in Zotero often fails to update the Publication year. </p>
+<h2 id="Zotero-scipdf"><a href="#Zotero-scipdf" class="headerlink" title="Zotero-scipdf"></a>Zotero-scipdf</h2><p>Download PDF from Scihub. It supports batch download as well.</p>
+]]></content>
+      <categories>
+        <category>Software</category>
+      </categories>
+      <tags>
+        <tag>Zotero 7 Plugins</tag>
+        <tag>Jaminum</tag>
+        <tag>Zotero-better-bibtex</tag>
+        <tag>Ethereal</tag>
+        <tag>Zotero-shortdoi</tag>
+        <tag>Zotero-attanger</tag>
+        <tag>Zotero-addons</tag>
+        <tag>Green Frog</tag>
+        <tag>Zotero-scipdf</tag>
       </tags>
   </entry>
 </search>

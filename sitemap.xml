@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://yongkang-yang.github.io/posts/Infinity/</loc>
+    
+    <lastmod>2025-01-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://yongkang-yang.github.io/posts/d4c8fa66/</loc>
     
     <lastmod>2024-12-07</lastmod>
@@ -12,15 +21,6 @@
   
   <url>
     <loc>https://yongkang-yang.github.io/posts/4f1dc535/</loc>
-    
-    <lastmod>2024-12-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://yongkang-yang.github.io/posts/Infinity/</loc>
     
     <lastmod>2024-12-07</lastmod>
     
@@ -94,7 +94,7 @@
 
   <url>
     <loc>https://yongkang-yang.github.io/</loc>
-    <lastmod>2024-12-07</lastmod>
+    <lastmod>2025-01-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -102,182 +102,182 @@
   
   <url>
     <loc>https://yongkang-yang.github.io/tags/support/</loc>
-    <lastmod>2024-12-07</lastmod>
+    <lastmod>2025-01-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://yongkang-yang.github.io/tags/NotebookLM/</loc>
-    <lastmod>2024-12-07</lastmod>
+    <lastmod>2025-01-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://yongkang-yang.github.io/tags/ChatGPT/</loc>
-    <lastmod>2024-12-07</lastmod>
+    <lastmod>2025-01-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://yongkang-yang.github.io/tags/Academic-writing/</loc>
-    <lastmod>2024-12-07</lastmod>
+    <lastmod>2025-01-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://yongkang-yang.github.io/tags/zotero/</loc>
-    <lastmod>2024-12-07</lastmod>
+    <lastmod>2025-01-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://yongkang-yang.github.io/tags/javascript/</loc>
-    <lastmod>2024-12-07</lastmod>
+    <lastmod>2025-01-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://yongkang-yang.github.io/tags/sentence-case/</loc>
-    <lastmod>2024-12-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://yongkang-yang.github.io/tags/measurement-invariance/</loc>
-    <lastmod>2024-12-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://yongkang-yang.github.io/tags/latent-change-score-model/</loc>
-    <lastmod>2024-12-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://yongkang-yang.github.io/tags/RSS/</loc>
-    <lastmod>2024-12-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://yongkang-yang.github.io/tags/rss/</loc>
-    <lastmod>2024-12-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://yongkang-yang.github.io/tags/email-alert/</loc>
-    <lastmod>2024-12-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://yongkang-yang.github.io/tags/browzine/</loc>
-    <lastmod>2024-12-07</lastmod>
+    <lastmod>2025-01-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://yongkang-yang.github.io/tags/scales/</loc>
-    <lastmod>2024-12-07</lastmod>
+    <lastmod>2025-01-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://yongkang-yang.github.io/tags/measures/</loc>
-    <lastmod>2024-12-07</lastmod>
+    <lastmod>2025-01-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://yongkang-yang.github.io/tags/Zotero-7-Plugins/</loc>
-    <lastmod>2024-12-07</lastmod>
+    <loc>https://yongkang-yang.github.io/tags/rss/</loc>
+    <lastmod>2025-01-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://yongkang-yang.github.io/tags/Jaminum/</loc>
-    <lastmod>2024-12-07</lastmod>
+    <loc>https://yongkang-yang.github.io/tags/email-alert/</loc>
+    <lastmod>2025-01-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://yongkang-yang.github.io/tags/Zotero-better-bibtex/</loc>
-    <lastmod>2024-12-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://yongkang-yang.github.io/tags/Ethereal/</loc>
-    <lastmod>2024-12-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://yongkang-yang.github.io/tags/Zotero-shortdoi/</loc>
-    <lastmod>2024-12-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://yongkang-yang.github.io/tags/Zotero-attanger/</loc>
-    <lastmod>2024-12-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://yongkang-yang.github.io/tags/Zotero-addons/</loc>
-    <lastmod>2024-12-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://yongkang-yang.github.io/tags/Green-Frog/</loc>
-    <lastmod>2024-12-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://yongkang-yang.github.io/tags/Zotero-scipdf/</loc>
-    <lastmod>2024-12-07</lastmod>
+    <loc>https://yongkang-yang.github.io/tags/browzine/</loc>
+    <lastmod>2025-01-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://yongkang-yang.github.io/tags/growth-modeling/</loc>
-    <lastmod>2024-12-07</lastmod>
+    <lastmod>2025-01-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://yongkang-yang.github.io/tags/moderation/</loc>
-    <lastmod>2024-12-07</lastmod>
+    <lastmod>2025-01-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://yongkang-yang.github.io/tags/measurement-invariance/</loc>
+    <lastmod>2025-01-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://yongkang-yang.github.io/tags/latent-change-score-model/</loc>
+    <lastmod>2025-01-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://yongkang-yang.github.io/tags/RSS/</loc>
+    <lastmod>2025-01-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://yongkang-yang.github.io/tags/Zotero-7-Plugins/</loc>
+    <lastmod>2025-01-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://yongkang-yang.github.io/tags/Jaminum/</loc>
+    <lastmod>2025-01-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://yongkang-yang.github.io/tags/Zotero-better-bibtex/</loc>
+    <lastmod>2025-01-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://yongkang-yang.github.io/tags/Ethereal/</loc>
+    <lastmod>2025-01-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://yongkang-yang.github.io/tags/Zotero-shortdoi/</loc>
+    <lastmod>2025-01-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://yongkang-yang.github.io/tags/Zotero-attanger/</loc>
+    <lastmod>2025-01-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://yongkang-yang.github.io/tags/Zotero-addons/</loc>
+    <lastmod>2025-01-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://yongkang-yang.github.io/tags/Green-Frog/</loc>
+    <lastmod>2025-01-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://yongkang-yang.github.io/tags/Zotero-scipdf/</loc>
+    <lastmod>2025-01-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -286,35 +286,35 @@
   
   <url>
     <loc>https://yongkang-yang.github.io/categories/Blog/</loc>
-    <lastmod>2024-12-07</lastmod>
+    <lastmod>2025-01-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://yongkang-yang.github.io/categories/Software/</loc>
-    <lastmod>2024-12-07</lastmod>
+    <lastmod>2025-01-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://yongkang-yang.github.io/categories/Research/</loc>
-    <lastmod>2024-12-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://yongkang-yang.github.io/categories/Research-Method/</loc>
-    <lastmod>2024-12-07</lastmod>
+    <lastmod>2025-01-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://yongkang-yang.github.io/categories/Tips/</loc>
-    <lastmod>2024-12-07</lastmod>
+    <lastmod>2025-01-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://yongkang-yang.github.io/categories/Research-Method/</loc>
+    <lastmod>2025-01-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
