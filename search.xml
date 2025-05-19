@@ -262,20 +262,6 @@ If you find one relevant scale but the paper only revealed on item or two. Then 
       </tags>
   </entry>
   <entry>
-    <title>RSS Feed</title>
-    <url>/posts/89f1b92c/</url>
-    <content><![CDATA[<p>This site is available on RSS feed. Add this link: <a href="https://www.yongkang-yang.github.io/atom.xml">https://www.yongkang-yang.github.io/atom.xml</a> to you RSS reader to follow the latest updates.</p>
-<!-- This message is used to verify that this feed (feedId:84313441177364480) belongs to me (userId:82875362231734272). Join me in enjoying the next generation information browser https://follow.is. -->
-
-]]></content>
-      <categories>
-        <category>Blog</category>
-      </categories>
-      <tags>
-        <tag>RSS</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Mplus Code for Measurement invariance and LCS model</title>
     <url>/posts/b97fc5b4/</url>
     <content><![CDATA[<h4 id="Info"><a href="#Info" class="headerlink" title="Info"></a>Info</h4><p><strong>Click this link to access the file</strong>  <a href="https://osf.io/97yn4/">OSF link</a></p>
@@ -300,6 +286,20 @@ If you find one relevant scale but the paper only revealed on item or two. Then 
       <tags>
         <tag>measurement invariance</tag>
         <tag>latent change score model</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>RSS Feed</title>
+    <url>/posts/89f1b92c/</url>
+    <content><![CDATA[<p>This site is available on RSS feed. Add this link: <a href="https://www.yongkang-yang.github.io/atom.xml">https://www.yongkang-yang.github.io/atom.xml</a> to you RSS reader to follow the latest updates.</p>
+<!-- This message is used to verify that this feed (feedId:84313441177364480) belongs to me (userId:82875362231734272). Join me in enjoying the next generation information browser https://follow.is. -->
+
+]]></content>
+      <categories>
+        <category>Blog</category>
+      </categories>
+      <tags>
+        <tag>RSS</tag>
       </tags>
   </entry>
   <entry>
@@ -333,18 +333,6 @@ If you find one relevant scale but the paper only revealed on item or two. Then 
         <tag>Zotero-addons</tag>
         <tag>Green Frog</tag>
         <tag>Zotero-scipdf</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>XXXX</title>
-    <url>/posts/null/</url>
-    <content><![CDATA[<p>2<br>3</p>
-]]></content>
-      <categories>
-        <category>Blog</category>
-      </categories>
-      <tags>
-        <tag>test</tag>
       </tags>
   </entry>
 </search>
