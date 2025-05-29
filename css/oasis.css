@@ -1,3 +1,50 @@
+.tag-cloud {
+  margin: 2em 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8em;
+}
+.tag-cloud a {
+  display: inline-block;
+  padding: 0.4em 0.8em;
+  border-radius: 4px;
+  background-color: #f3f3f3;
+  color: #113cfc;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.tag-cloud a:hover {
+  background-color: #e0e0e0;
+}
+.tag-cloud a .tag-count {
+  font-size: 0.8em;
+  margin-left: 0.2em;
+  vertical-align: super;
+}
+.tag-cloud .tag-size-1 {
+  font-size: 0.9em;
+}
+.tag-cloud .tag-size-2 {
+  font-size: 1em;
+}
+.tag-cloud .tag-size-3 {
+  font-size: 1.1em;
+}
+.tag-cloud .tag-size-4 {
+  font-size: 1.2em;
+}
+.tag-cloud .tag-size-5 {
+  font-size: 1.3em;
+}
+.tag-cloud .tag-size-6 {
+  font-size: 1.4em;
+}
+.tag-cloud .tag-size-7 {
+  font-size: 1.5em;
+}
+.tag-cloud .tag-size-8 {
+  font-size: 1.6em;
+}
 body {
   display: flex;
   flex-direction: column;
