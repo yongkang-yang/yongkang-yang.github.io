@@ -191,39 +191,6 @@ If you find one relevant scale but the paper only revealed on item or two. Then 
       </tags>
   </entry>
   <entry>
-    <title>How to keep track of the latest journal articles</title>
-    <url>/posts/2bab4f46/</url>
-    <content><![CDATA[<p>Probably just me, every once a while, I feel myself anxious being left behind about the latest literature in my field. So, for a long time, I’ve been trying to find a perfect way to keep track of the latest journal articles. I found my final answer, but tried different methods along the way, and you may find other solutions fit you better. I hereby recommend three main approaches for your consideration.</p>
-<span id="more"></span> 
-
-<h3><span style="color:#040273;">Email Alert</span></h3>
-
-<p>All the journals can be found in publication companies like, Willey, Springer, Sage,  Elsevier, etc. For example, in Elsevier, you can find OB related journals: <em><a href="https://www.sciencedirect.com/journal/journal-of-business-research">Journal of Business Research</a></em>, <em><a href="https://www.sciencedirect.com/journal/journal-of-business-venturing">Journal of Business Venturing</a></em>, <em><a href="https://www.sciencedirect.com/journal/journal-of-vocational-behavior">Journal of Vocational Behavior</a></em>, <em><a href="https://www.sciencedirect.com/journal/organizational-behavior-and-human-decision-processes">Organizational Behavior and Human Decision Processes</a></em>. By signing up the Elsevier, you are able to follow all these journal by email alert (see a screenshot below). </p>
-<p><img src="https://s2.loli.net/2024/06/16/HFA4nTBCzYa1QRJ.png" alt="Manage my publication.png"></p>
-<p>It’s the same for Willy, Sage and other publishers only if you know which journal is in which publisher.</p>
-<h3><span style="color:#040273;">RSS subscription</span></h3>
-
-<p>The email alert is a perfect way but for people who are less likely to put everything in the mailbox, it would be overwhelming whenever you open the mailbox and find hundreds of unread journal articles. Although these emails can be put in a separate folder and do not disturb your mail inbox, the pressure is still hanging there. Another solution is therefore to find a place to put this articles independently. RSS offers the perfect solution in this regard. <a href="https://en.wikipedia.org/wiki/RSS">RSS</a> is a web feed that allows users and applications to access updates to websites in a standardized, computer-readable format. RSS readers like <a href="https://feedly.com/">Feedly</a>, <a href="https://www.inoreader.com/">Inoreader</a>, or other embedded RSS service in outlook or Zotero can recognize RSS feeds and generate reading interface.   </p>
-<p>I recommend Zotero because you can easily include articles into your collection and then cite the paper when you need. The interface looks like blow:  </p>
-<p><img src="https://s2.loli.net/2024/06/18/dDrm2eXJQP1SEhx.png" alt="RSS feeds"></p>
-<p>When you click one journal, for example, <em>Academy of management Annals</em>, you are able to read the article by clicking the paper, and Zotero will redirect you to the original page, if you find this paper interesting, you can also “add to your library”.</p>
-<p><img src="https://s2.loli.net/2024/06/18/5yYuiAlQvRXnpjg.png" alt="Academy of Management Annals"></p>
-<h3><span style="color:#040273;">Browzine</span></h3>
-
-<p>Okay, the final solution, at least to me. I don’t like RSS as it does not strictly follow the chronical order. Currently, I am using the <a href="browzine.com">Browzine</a>, a magazine-like reading experience (see a screenshot below).  You will need University authorization to use. Please contact your library if you are unsure about it.</p>
-<p><img src="https://s2.loli.net/2024/06/18/DhXGiBpyJ2CkMQw.png" alt="My Bookshelf"></p>
-<p>In the end, <strong>it’s more important to read the paper than finding ways to follow the paper</strong>. If you are active in the filed, papers will reach out to you. </p>
-]]></content>
-      <categories>
-        <category>Tips</category>
-      </categories>
-      <tags>
-        <tag>rss</tag>
-        <tag>email alert</tag>
-        <tag>browzine</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>How to test moderation in growth modeling</title>
     <url>/posts/c622061/</url>
     <content><![CDATA[<p>The outcome is repeatedly measured in the moderation. </p>
@@ -259,6 +226,39 @@ If you find one relevant scale but the paper only revealed on item or two. Then 
       <tags>
         <tag>growth modeling</tag>
         <tag>moderation</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>How to keep track of the latest journal articles</title>
+    <url>/posts/2bab4f46/</url>
+    <content><![CDATA[<p>Probably just me, every once a while, I feel myself anxious being left behind about the latest literature in my field. So, for a long time, I’ve been trying to find a perfect way to keep track of the latest journal articles. I found my final answer, but tried different methods along the way, and you may find other solutions fit you better. I hereby recommend three main approaches for your consideration.</p>
+<span id="more"></span> 
+
+<h3><span style="color:#040273;">Email Alert</span></h3>
+
+<p>All the journals can be found in publication companies like, Willey, Springer, Sage,  Elsevier, etc. For example, in Elsevier, you can find OB related journals: <em><a href="https://www.sciencedirect.com/journal/journal-of-business-research">Journal of Business Research</a></em>, <em><a href="https://www.sciencedirect.com/journal/journal-of-business-venturing">Journal of Business Venturing</a></em>, <em><a href="https://www.sciencedirect.com/journal/journal-of-vocational-behavior">Journal of Vocational Behavior</a></em>, <em><a href="https://www.sciencedirect.com/journal/organizational-behavior-and-human-decision-processes">Organizational Behavior and Human Decision Processes</a></em>. By signing up the Elsevier, you are able to follow all these journal by email alert (see a screenshot below). </p>
+<p><img src="https://s2.loli.net/2024/06/16/HFA4nTBCzYa1QRJ.png" alt="Manage my publication.png"></p>
+<p>It’s the same for Willy, Sage and other publishers only if you know which journal is in which publisher.</p>
+<h3><span style="color:#040273;">RSS subscription</span></h3>
+
+<p>The email alert is a perfect way but for people who are less likely to put everything in the mailbox, it would be overwhelming whenever you open the mailbox and find hundreds of unread journal articles. Although these emails can be put in a separate folder and do not disturb your mail inbox, the pressure is still hanging there. Another solution is therefore to find a place to put this articles independently. RSS offers the perfect solution in this regard. <a href="https://en.wikipedia.org/wiki/RSS">RSS</a> is a web feed that allows users and applications to access updates to websites in a standardized, computer-readable format. RSS readers like <a href="https://feedly.com/">Feedly</a>, <a href="https://www.inoreader.com/">Inoreader</a>, or other embedded RSS service in outlook or Zotero can recognize RSS feeds and generate reading interface.   </p>
+<p>I recommend Zotero because you can easily include articles into your collection and then cite the paper when you need. The interface looks like blow:  </p>
+<p><img src="https://s2.loli.net/2024/06/18/dDrm2eXJQP1SEhx.png" alt="RSS feeds"></p>
+<p>When you click one journal, for example, <em>Academy of management Annals</em>, you are able to read the article by clicking the paper, and Zotero will redirect you to the original page, if you find this paper interesting, you can also “add to your library”.</p>
+<p><img src="https://s2.loli.net/2024/06/18/5yYuiAlQvRXnpjg.png" alt="Academy of Management Annals"></p>
+<h3><span style="color:#040273;">Browzine</span></h3>
+
+<p>Okay, the final solution, at least to me. I don’t like RSS as it does not strictly follow the chronical order. Currently, I am using the <a href="browzine.com">Browzine</a>, a magazine-like reading experience (see a screenshot below).  You will need University authorization to use. Please contact your library if you are unsure about it.</p>
+<p><img src="https://s2.loli.net/2024/06/18/DhXGiBpyJ2CkMQw.png" alt="My Bookshelf"></p>
+<p>In the end, <strong>it’s more important to read the paper than finding ways to follow the paper</strong>. If you are active in the filed, papers will reach out to you. </p>
+]]></content>
+      <categories>
+        <category>Tips</category>
+      </categories>
+      <tags>
+        <tag>rss</tag>
+        <tag>email alert</tag>
+        <tag>browzine</tag>
       </tags>
   </entry>
   <entry>
