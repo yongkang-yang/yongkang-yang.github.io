@@ -11,15 +11,6 @@
   </url>
   
   <url>
-    <loc>https://yongkang-yang.github.io/posts/d4c8fa66/</loc>
-    
-    <lastmod>2025-06-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://yongkang-yang.github.io/posts/d86215b0/</loc>
     
     <lastmod>2025-06-27</lastmod>
@@ -111,20 +102,6 @@
   
   <url>
     <loc>https://yongkang-yang.github.io/tags/support/</loc>
-    <lastmod>2025-06-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://yongkang-yang.github.io/tags/ChatGPT/</loc>
-    <lastmod>2025-06-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://yongkang-yang.github.io/tags/Academic-writing/</loc>
     <lastmod>2025-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -301,14 +278,14 @@
   </url>
   
   <url>
-    <loc>https://yongkang-yang.github.io/categories/Research/</loc>
+    <loc>https://yongkang-yang.github.io/categories/Software/</loc>
     <lastmod>2025-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://yongkang-yang.github.io/categories/Software/</loc>
+    <loc>https://yongkang-yang.github.io/categories/Research/</loc>
     <lastmod>2025-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
